@@ -1,0 +1,46 @@
+name: Actualizar ranking de leyenda
+
+on:
+  schedule:
+    - cron: "10 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-leyenda
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Recolectar el ranking
+        env:
+          COC_EMAIL: ${{ secrets.COC_EMAIL }}
+          COC_PASSWORD: ${{ secrets.COC_PASSWORD }}
+        run: python fetch_legend.py
+
+      - name: Guardar los datos (commit)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --quiet --cached; then
+            echo "Sin cambios que guardar."
+          else
+            git commit -m "Foto del reset $(date -u +%F)"
+            git push
+          fi
