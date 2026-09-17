@@ -27,7 +27,7 @@ import sys
 import coc
 
 # Posiciones cuyo corte de copas queremos mostrar en la tabla.
-TARGET_RANKS = [1, 10, 20, 50, 100, 200]
+TARGET_RANKS = [1, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
