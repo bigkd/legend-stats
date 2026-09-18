@@ -2,19 +2,21 @@
 """
 Recolector del ranking global de Liga Leyenda (Top 1-200) de Clash of Clans.
 
-Cada ejecucion:
-  1. Se conecta a la API OFICIAL de Clash of Clans (developer.clashofclans.com).
-     Usa login por email/contrasena, que crea/renueva automaticamente la clave
-     de API para la IP actual -> funciona en GitHub Actions aunque la IP cambie.
-  2. Descarga el Top 200 mundial por copas.
-  3. Calcula los cortes de copas en las posiciones objetivo (1, 10, 20, 50, 100, 200).
-  4. Los compara con la foto del reset ANTERIOR para sacar el +/-.
-  5. Guarda:
-       - data/history/AAAA-MM-DD.json  (foto completa del dia)
-       - data/latest.json              (lo que lee el dashboard)
+Produce, por cada posicion objetivo, tres datos:
+  - copas ACTUALES   (se refrescan en cada ejecucion)
+  - copas AL RESET    (foto congelada del inicio del dia de leyenda)
+  - +/- RESET ANTERIOR (foto de hoy menos la de ayer)
 
-Pensado para ejecutarse una vez al dia, justo despues del reset diario de leyenda
-(05:00 UTC). Variables de entorno necesarias: COC_EMAIL y COC_PASSWORD.
+El dia de leyenda empieza/acaba a las 04:58 UTC. La foto del reset se "congela"
+en la PRIMERA ejecucion de cada dia de leyenda (justo tras las 04:58 UTC); las
+ejecuciones posteriores del mismo dia solo actualizan las copas actuales, sin
+tocar la foto del reset.
+
+Conexion: API OFICIAL de Clash of Clans (developer.clashofclans.com), login por
+email/contrasena (gestiona la clave para la IP actual, ideal en GitHub Actions).
+
+Variables de entorno: COC_EMAIL y COC_PASSWORD.
+Opcional: FORCE_CAPTURE=1 vuelve a congelar la foto del reset de hoy (uso manual).
 """
 
 import asyncio
@@ -26,21 +28,32 @@ import sys
 
 import coc
 
-# Posiciones cuyo corte de copas queremos mostrar en la tabla.
-TARGET_RANKS = [1, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+# Posiciones cuyo corte de copas queremos mostrar.
+TARGET_RANKS = [1, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100,
+                110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+
+# El dia de leyenda arranca a esta hora UTC (04:58).
+RESET_DELTA = dt.timedelta(hours=4, minutes=58)
 
 BASE_DIR = pathlib.Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
 HIST_DIR = DATA_DIR / "history"
 
-MESES_ES = [
-    "", "ene", "feb", "mar", "abr", "may", "jun",
-    "jul", "ago", "sep", "oct", "nov", "dic",
-]
+MESES_ES = ["", "ene", "feb", "mar", "abr", "may", "jun",
+            "jul", "ago", "sep", "oct", "nov", "dic"]
 
 
 def etiqueta_fecha(d: dt.date) -> str:
     return f"{d.day} {MESES_ES[d.month]} {d.year}"
+
+
+def iso_z(momento: dt.datetime) -> str:
+    return momento.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def dia_leyenda(momento: dt.datetime) -> dt.date:
+    """Fecha del dia de leyenda al que pertenece 'momento' (cambia a las 04:58 UTC)."""
+    return (momento - RESET_DELTA).date()
 
 
 def trofeos_en_puesto(top, rank):
@@ -48,24 +61,22 @@ def trofeos_en_puesto(top, rank):
     exacto = next((p for p in top if p["rank"] == rank), None)
     if exacto:
         return exacto["trophies"]
-    cercano = min(top, key=lambda p: abs(p["rank"] - rank))
-    return cercano["trophies"]
+    return min(top, key=lambda p: abs(p["rank"] - rank))["trophies"]
 
 
-def foto_previa(hoy_iso: str):
-    """Devuelve (fecha_iso, {rank: trofeos}) de la foto guardada mas reciente
-    anterior a hoy. Si no hay ninguna, devuelve (None, {})."""
+def reset_previo(dia_iso: str):
+    """(fecha_iso, {rank: trofeos}) de la foto del reset mas reciente anterior a
+    'dia_iso'. Si no hay ninguna, (None, {})."""
     if not HIST_DIR.exists():
         return None, {}
     ficheros = sorted(p.name for p in HIST_DIR.glob("*.json"))
-    previas = [f for f in ficheros if f[:-5] < hoy_iso]
+    previas = [f for f in ficheros if f[:-5] < dia_iso]
     if not previas:
         return None, {}
-    ultima = previas[-1]
-    with open(HIST_DIR / ultima, encoding="utf-8") as fh:
+    with open(HIST_DIR / previas[-1], encoding="utf-8") as fh:
         datos = json.load(fh)
     mapa = {p["rank"]: p["trophies"] for p in datos.get("top200", [])}
-    return ultima[:-5], mapa
+    return previas[-1][:-5], mapa
 
 
 async def descargar_top200():
@@ -81,50 +92,70 @@ async def descargar_top200():
     finally:
         await client.close()
 
-    top = [
-        {"rank": p.rank, "name": p.name, "tag": p.tag, "trophies": p.trophies}
-        for p in jugadores
-    ]
+    top = [{"rank": p.rank, "name": p.name, "tag": p.tag, "trophies": p.trophies}
+           for p in jugadores]
     top.sort(key=lambda p: p["rank"])
     return top
 
 
 def main():
-    top = asyncio.run(descargar_top200())
-    if not top:
+    ahora = dt.datetime.now(dt.timezone.utc)
+    now_iso = iso_z(ahora)
+    ld = dia_leyenda(ahora)
+    ld_iso = ld.isoformat()
+    reset_file = HIST_DIR / f"{ld_iso}.json"
+    forzar = os.environ.get("FORCE_CAPTURE") == "1"
+
+    # Copas ACTUALES: siempre se descargan.
+    current_top = asyncio.run(descargar_top200())
+    if not current_top:
         sys.exit("ERROR: la API no devolvio jugadores.")
 
-    ahora = dt.datetime.now(dt.timezone.utc)
-    hoy_iso = ahora.date().isoformat()
+    HIST_DIR.mkdir(parents=True, exist_ok=True)
 
-    prev_fecha, prev_mapa = foto_previa(hoy_iso)
+    # Foto del RESET: se congela en la 1a ejecucion del dia de leyenda.
+    if reset_file.exists() and not forzar:
+        with open(reset_file, encoding="utf-8") as fh:
+            reset_data = json.load(fh)
+        reset_top = reset_data["top200"]
+        reset_at = reset_data.get("reset_at", now_iso)
+        congelada = False
+    else:
+        reset_top = current_top
+        reset_at = now_iso
+        with open(reset_file, "w", encoding="utf-8") as fh:
+            json.dump({"legend_day": ld_iso, "reset_at": reset_at,
+                       "top200": reset_top}, fh, ensure_ascii=False, indent=2)
+        congelada = True
+
+    prev_date, prev_map = reset_previo(ld_iso)
 
     cutoffs = []
     for rank in TARGET_RANKS:
-        trofeos = trofeos_en_puesto(top, rank)
-        prev = prev_mapa.get(rank)
-        delta = (trofeos - prev) if prev is not None else None
-        cutoffs.append({"rank": rank, "trophies": trofeos, "delta": delta})
+        actual = trofeos_en_puesto(current_top, rank)
+        reset = trofeos_en_puesto(reset_top, rank)
+        prev = prev_map.get(rank)
+        delta = (reset - prev) if prev is not None else None
+        cutoffs.append({"rank": rank, "current": actual, "reset": reset, "delta": delta})
 
     salida = {
-        "captured_at": ahora.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "reset_label": etiqueta_fecha(ahora.date()),
-        "previous_date": prev_fecha,
+        "current_at": now_iso,
+        "reset_at": reset_at,
+        "legend_day": ld_iso,
+        "reset_label": etiqueta_fecha(ld),
+        "previous_reset_date": prev_date,
         "target_ranks": TARGET_RANKS,
         "cutoffs": cutoffs,
-        "top200": top,
+        "top200": current_top,
     }
-
-    HIST_DIR.mkdir(parents=True, exist_ok=True)
-    with open(HIST_DIR / f"{hoy_iso}.json", "w", encoding="utf-8") as fh:
-        json.dump(salida, fh, ensure_ascii=False, indent=2)
     with open(DATA_DIR / "latest.json", "w", encoding="utf-8") as fh:
         json.dump(salida, fh, ensure_ascii=False, indent=2)
 
-    print(f"OK: {len(top)} jugadores. Foto {hoy_iso}. Reset previo: {prev_fecha}.")
+    print(f"OK. Dia de leyenda {ld_iso}. Foto del reset {'CONGELADA ahora' if congelada else 'ya existia'} "
+          f"({reset_at}). Copas actuales a {now_iso}. Reset previo: {prev_date}.")
     for c in cutoffs:
         d = "n/d" if c["delta"] is None else f"{c['delta']:+d}"
-        print(f"  Top {c['rank']:>4}: {c['trophies']} copas ({d})")
+        print(f"  Top {c['rank']:>4}: actual {c['current']} | reset {c['reset']} ({d})")
 
 
 if __name__ == "__main__":

@@ -42,20 +42,18 @@
     -webkit-font-smoothing:antialiased;
     padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0);
   }
-  .wrap{max-width:760px; margin:0 auto; padding-block:28px 56px; padding-inline:16px}
+  .wrap{max-width:780px; margin:0 auto; padding-block:28px 56px; padding-inline:16px}
 
-  .head{display:flex; gap:16px; align-items:flex-start; margin-bottom:20px}
-  .badge{
-    flex:0 0 auto; width:54px; height:54px; border-radius:14px;
+  .head{display:flex; gap:16px; align-items:flex-start; margin-bottom:18px}
+  .badge{flex:0 0 auto; width:54px; height:54px; border-radius:14px;
     background:linear-gradient(150deg,var(--accent),var(--accent-2));
-    display:grid; place-items:center; box-shadow:var(--shadow);
-  }
+    display:grid; place-items:center; box-shadow:var(--shadow)}
   .badge svg{width:30px; height:30px}
   .htext h1{font-family:"Rubik",sans-serif; font-weight:700; font-size:1.5rem; margin:0 0 3px; letter-spacing:-.01em; text-wrap:balance}
   .htext p{margin:0; color:var(--muted); font-size:.9rem}
   .htext .gold{color:var(--gold); font-weight:600}
 
-  .meta{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center; margin:0 0 20px; font-size:.82rem; color:var(--muted)}
+  .meta{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center; margin:0 0 18px; font-size:.82rem; color:var(--muted)}
   .meta b{color:var(--text); font-weight:600}
   .dot{width:7px;height:7px;border-radius:50%;background:var(--pos);display:inline-block;margin-right:6px;vertical-align:middle;box-shadow:0 0 0 3px var(--pos-bg)}
   .sample{margin-left:auto; font-size:.72rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--gold); background:var(--surface-3); border:1px solid var(--border); padding:4px 9px; border-radius:999px}
@@ -64,24 +62,28 @@
   .tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:22px}
   .tile{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 15px; box-shadow:var(--shadow)}
   .tile .lbl{font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--faint); font-weight:600}
-  .tile .val{font-family:"Rubik",sans-serif; font-weight:700; font-size:1.7rem; line-height:1.1; margin:6px 0 4px; font-variant-numeric:tabular-nums}
-  .tile .val .cup{font-size:.8rem; color:var(--gold); font-weight:600; margin-left:3px}
+  .tile .val{font-family:"Rubik",sans-serif; font-weight:700; font-size:1.6rem; line-height:1.1; margin:6px 0 5px; font-variant-numeric:tabular-nums}
+  .tile .val .cup{font-size:.75rem; color:var(--gold); font-weight:600; margin-left:3px}
+  .tile .sub{font-size:.76rem; color:var(--muted); display:flex; gap:7px; align-items:center; flex-wrap:wrap}
 
   .card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; margin-bottom:22px}
-  .caption{display:flex; align-items:center; gap:8px; padding:13px 18px; border-bottom:1px solid var(--border); font-size:.82rem; color:var(--muted)}
+  .caption{padding:13px 18px; border-bottom:1px solid var(--border); font-size:.82rem; color:var(--muted)}
   .caption b{color:var(--text)}
-  table{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums}
-  thead th{text-align:left; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--faint); font-weight:600; padding:10px 18px; background:var(--surface-2)}
-  thead th.num{text-align:right}
-  tbody td{padding:12px 18px; border-top:1px solid var(--border); font-size:.95rem}
+  .scroll{overflow-x:auto}
+  table{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; min-width:440px}
+  thead th{font-size:.7rem; text-transform:uppercase; letter-spacing:.04em; color:var(--faint); font-weight:600; padding:10px 16px; background:var(--surface-2); text-align:right; white-space:nowrap}
+  thead th:first-child{text-align:left}
+  tbody td{padding:11px 16px; border-top:1px solid var(--border); font-size:.95rem; text-align:right}
+  tbody td:first-child{text-align:left}
   tbody tr:first-child td{border-top:0}
-  .rank{font-weight:600}
+  .rank{font-weight:600; white-space:nowrap}
   .rank .tag{display:inline-block; min-width:2.4em; text-align:center; font-family:"Rubik",sans-serif; font-size:.72rem; font-weight:700; color:var(--accent); background:var(--surface-3); border-radius:6px; padding:2px 7px; margin-right:9px}
   tr.hl td{background:var(--surface-2)}
   tr.hl .tag{color:#fff; background:linear-gradient(150deg,var(--accent),var(--accent-2))}
-  td.cups{text-align:right; font-family:"Rubik",sans-serif; font-weight:600; font-size:1.02rem}
-  td.delta{text-align:right; font-weight:600; font-size:.9rem; white-space:nowrap}
-  .pill{display:inline-block; padding:2px 8px; border-radius:999px; min-width:3.6em}
+  td.cur{font-family:"Rubik",sans-serif; font-weight:600; font-size:1.02rem}
+  td.res{color:var(--muted); font-family:"Rubik",sans-serif; font-weight:600}
+  td.delta{font-weight:600; font-size:.9rem; white-space:nowrap}
+  .pill{display:inline-block; padding:2px 8px; border-radius:999px; min-width:3.4em}
   .up{color:var(--pos); background:var(--pos-bg)}
   .down{color:var(--neg); background:var(--neg-bg)}
   .flat{color:var(--faint); background:var(--surface-3)}
@@ -99,13 +101,11 @@
   .result .big{font-family:"Rubik",sans-serif; font-weight:700; font-size:1.5rem; color:var(--accent-2)}
   .result.err{color:var(--neg)}
 
-  .foot{margin-top:20px; font-size:.78rem; color:var(--faint); line-height:1.55}
+  .foot{margin-top:18px; font-size:.78rem; color:var(--faint); line-height:1.55}
 
   @media (max-width:460px){
-    .tiles{grid-template-columns:1fr 1fr}
-    .tiles .tile:last-child{grid-column:1 / -1}
+    .tiles{grid-template-columns:1fr}
     .htext h1{font-size:1.3rem}
-    thead th, tbody td{padding-left:13px; padding-right:13px}
   }
 </style>
 </head>
@@ -117,23 +117,26 @@
     </div>
     <div class="htext">
       <h1>Ranking Global · Liga Leyenda</h1>
-      <p>Corte de <span class="gold">copas</span> por posición (Top 1–200) al reset diario, con la variación respecto al día anterior</p>
+      <p>Corte de <span class="gold">copas</span> por posición (Top 1–200): actuales, al reset, y variación frente al reset anterior</p>
     </div>
   </header>
 
   <div class="meta">
-    <span><span class="dot"></span>Foto al reset: <b id="resetLabel">—</b></span>
-    <span id="prevWrap">Comparado con: <b id="prevLabel">—</b></span>
+    <span><span class="dot"></span>Copas actuales: <b id="curAt">—</b></span>
+    <span>Foto del reset: <b id="resetLabel">—</b></span>
+    <span id="prevWrap">Δ vs reset del <b id="prevLabel">—</b></span>
     <span class="sample" id="sampleBadge" hidden>Datos de ejemplo</span>
   </div>
 
   <section class="tiles" id="tiles"></section>
 
   <div class="card">
-    <div class="caption">Corte de copas por posición &nbsp;·&nbsp; <b>Δ = frente al reset anterior</b></div>
-    <div style="overflow-x:auto">
+    <div class="caption"><b>Actuales</b> = ahora mismo · <b>Al reset</b> = inicio del día (04:58 UTC) · <b>Δ</b> = reset de hoy vs reset de ayer</div>
+    <div class="scroll">
       <table>
-        <thead><tr><th>Posición</th><th class="num">Copas</th><th class="num">Δ desde reset</th></tr></thead>
+        <thead><tr>
+          <th>Posición</th><th>Actuales</th><th>Al reset</th><th>Δ reset ant.</th>
+        </tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
@@ -141,7 +144,7 @@
 
   <div class="calc">
     <h2>¿Cuántas copas para subir puestos?</h2>
-    <p class="sub">Introduce tu puesto actual y el puesto al que quieres llegar (ambos entre 1 y 200).</p>
+    <p class="sub">Con las copas <b>actuales</b>. Introduce tu puesto actual y el puesto al que quieres llegar (1–200).</p>
     <div class="fields">
       <div class="field">
         <label for="from">Estoy en el puesto</label>
@@ -156,9 +159,9 @@
   </div>
 
   <p class="foot" id="foot">
-    Datos de la API oficial de Clash of Clans. La API solo publica el Top 200 mundial en vivo,
-    por eso la tabla llega hasta el puesto 200. El reset diario de leyenda es a las 05:00 UTC
-    (07:00 en España en verano, 06:00 en invierno).
+    Datos de la API oficial de Clash of Clans (Top 200 mundial). Las copas actuales se
+    refrescan cada hora; la foto del reset se congela al inicio de cada día de leyenda
+    (04:58 UTC) y no cambia hasta el día siguiente. <span id="resetAtNote"></span>
   </p>
 </div>
 
@@ -167,27 +170,30 @@
   const HIGHLIGHT = new Set([1, 100, 200]);
   const TILES = [1, 100, 200];
 
-  // ---- Datos de ejemplo (se usan si aún no hay data/latest.json real) ----
+  // ---- Datos de ejemplo (si aún no hay data/latest.json real) ----
   function sampleData(){
-    const top = [];
+    const top = [];       // ACTUALES
     for (let r = 1; r <= 200; r++){
       const t = Math.round(5740 + (6182 - 5740) * Math.pow((200 - r) / 199, 1.7));
-      top.push({ rank: r, trophies: t, name: "Jugador " + r, tag: "#SAMPLE" + r });
+      top.push({ rank: r, trophies: t, name: "Jugador " + r, tag: "#S" + r });
     }
-    const prevDeltas = {1:25, 10:-9, 20:5, 50:-6, 100:5, 200:-7};
+    const trAt = rk => top.find(p => p.rank === rk).trophies;
     const cutoffs = TARGETS.map(rank => {
-      const t = top.find(p => p.rank === rank).trophies;
-      return { rank, trophies: t, delta: prevDeltas[rank] };
+      const cur = trAt(rank);
+      const reset = cur - 60 - (rank % 5) * 8;          // el reset fue algo más bajo
+      const delta = ((rank * 7) % 21) - 10;             // reset hoy vs reset ayer
+      return { rank, current: cur, reset, delta };
     });
-    return {
-      captured_at: new Date().toISOString(),
-      reset_label: "hoy (ejemplo)",
-      previous_date: "ayer",
-      target_ranks: TARGETS, cutoffs, top200: top
-    };
+    const now = new Date().toISOString();
+    return { current_at: now, reset_at: now, reset_label: "hoy (ejemplo)",
+             previous_reset_date: "ayer", target_ranks: TARGETS, cutoffs, top200: top };
   }
 
   const fmtRank = r => "Top " + r.toLocaleString("es-ES");
+  function fmtHora(iso){
+    try{ return new Date(iso).toLocaleString("es-ES",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"}); }
+    catch(e){ return iso; }
+  }
   function deltaHTML(d){
     if (d === null || d === undefined) return `<span class="pill flat">n/d</span>`;
     if (d > 0) return `<span class="pill up"><span class="arw">▲</span>+${d}</span>`;
@@ -203,29 +209,30 @@
   let TOP = [];
 
   function render(d, isSample){
+    document.getElementById("curAt").textContent = fmtHora(d.current_at);
     document.getElementById("resetLabel").textContent = d.reset_label || "—";
-    if (d.previous_date){
-      document.getElementById("prevLabel").textContent = d.previous_date;
+    if (d.previous_reset_date){
+      document.getElementById("prevLabel").textContent = d.previous_reset_date;
       document.getElementById("prevWrap").hidden = false;
-    } else {
-      document.getElementById("prevWrap").hidden = true;
-    }
+    } else { document.getElementById("prevWrap").hidden = true; }
     document.getElementById("sampleBadge").hidden = !isSample;
+    document.getElementById("resetAtNote").textContent =
+      d.reset_at ? "Foto del reset congelada: " + fmtHora(d.reset_at) + "." : "";
 
-    const cut = {};
-    d.cutoffs.forEach(c => cut[c.rank] = c);
+    const cut = {}; d.cutoffs.forEach(c => cut[c.rank] = c);
 
     document.getElementById("tiles").innerHTML = TILES.map(rk => {
-      const c = cut[rk] || { trophies: "—", delta: null };
+      const c = cut[rk] || {current:"—", reset:"—", delta:null};
       return `<div class="tile"><div class="lbl">${fmtRank(rk)}</div>
-        <div class="val">${c.trophies}<span class="cup">🏆</span></div>
-        <div class="lbl" style="margin-top:2px">${deltaHTML(c.delta)}</div></div>`;
+        <div class="val">${c.current}<span class="cup">🏆</span></div>
+        <div class="sub">reset ${c.reset} ${deltaHTML(c.delta)}</div></div>`;
     }).join("");
 
     document.getElementById("rows").innerHTML = d.cutoffs.map(c =>
       `<tr class="${HIGHLIGHT.has(c.rank) ? "hl" : ""}">
         <td class="rank"><span class="tag">#${c.rank.toLocaleString("es-ES")}</span>${fmtRank(c.rank)}</td>
-        <td class="cups">${c.trophies}</td>
+        <td class="cur">${c.current}</td>
+        <td class="res">${c.reset}</td>
         <td class="delta">${deltaHTML(c.delta)}</td></tr>`
     ).join("");
 
@@ -243,14 +250,12 @@
       el.classList.add("err"); el.textContent = "Introduce dos puestos entre 1 y 200."; return;
     }
     if (to >= from){
-      el.innerHTML = `Para <b>subir</b> puestos, el destino debe ser un número menor que tu puesto actual (el puesto 1 es el mejor).`;
+      el.innerHTML = `Para <b>subir</b>, el destino debe ser un número menor que tu puesto actual (el 1 es el mejor).`;
       return;
     }
-    const tFrom = trophiesAt(TOP, from);
-    const tTo = trophiesAt(TOP, to);
-    const need = tTo - tFrom;
+    const tFrom = trophiesAt(TOP, from), tTo = trophiesAt(TOP, to);
     el.innerHTML = `Para pasar del <b>${fmtRank(from)}</b> (${tFrom} 🏆) al <b>${fmtRank(to)}</b> (${tTo} 🏆)
-      necesitas sumar aproximadamente<br><span class="big">+${need} copas</span>`;
+      necesitas sumar aproximadamente<br><span class="big">+${tTo - tFrom} copas</span>`;
   }
 
   document.getElementById("from").addEventListener("input", calc);
@@ -262,10 +267,8 @@
       const r = await fetch("data/latest.json", { cache: "no-store" });
       if (!r.ok) throw new Error("no data");
       data = await r.json();
-      if (!data.top200 || !data.top200.length) throw new Error("empty");
-    }catch(e){
-      data = sampleData(); isSample = true;
-    }
+      if (!data.cutoffs || !data.cutoffs.length) throw new Error("empty");
+    }catch(e){ data = sampleData(); isSample = true; }
     render(data, isSample);
   })();
 </script>
