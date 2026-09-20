@@ -2,8 +2,13 @@ name: Actualizar ranking de leyenda
 
 on:
   schedule:
-    - cron: "59 4 * * *"
-    - cron: "0 * * * *"
+    - cron: "59 4 * * *"   # 04:59
+    - cron: "3 5 * * *"    # 05:03
+    - cron: "9 5 * * *"    # 05:09
+    - cron: "17 5 * * *"   # 05:17
+    - cron: "27 5 * * *"   # 05:27
+    - cron: "41 5 * * *"   # 05:41
+    - cron: "23 * * * *"   # cada hora: copas actuales
   workflow_dispatch: {}
 
 permissions:
