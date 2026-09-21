@@ -58,6 +58,10 @@
   .dot{width:7px;height:7px;border-radius:50%;background:var(--pos);display:inline-block;margin-right:6px;vertical-align:middle;box-shadow:0 0 0 3px var(--pos-bg)}
   .sample{margin-left:auto; font-size:.72rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--gold); background:var(--surface-3); border:1px solid var(--border); padding:4px 9px; border-radius:999px}
   .sample[hidden]{display:none}
+  .lag{margin-left:7px; font-size:.72rem; font-weight:600; padding:2px 7px; border-radius:999px}
+  .lag.ok{color:var(--pos); background:var(--pos-bg)}
+  .lag.warn{color:var(--gold); background:var(--surface-3); border:1px solid var(--border)}
+  .lag:empty{display:none}
 
   .tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:22px}
   .tile{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:14px 15px; box-shadow:var(--shadow)}
@@ -123,7 +127,7 @@
 
   <div class="meta">
     <span><span class="dot"></span>Copas actuales: <b id="curAt">—</b></span>
-    <span>Foto del reset: <b id="resetLabel">—</b></span>
+    <span>Foto del reset: <b id="resetLabel">—</b><span id="resetLag" class="lag"></span></span>
     <span id="prevWrap">Δ vs reset del <b id="prevLabel">—</b></span>
     <span class="sample" id="sampleBadge" hidden>Datos de ejemplo</span>
   </div>
@@ -143,19 +147,20 @@
   </div>
 
   <div class="calc">
-    <h2>¿Cuántas copas para subir puestos?</h2>
-    <p class="sub">Con las copas <b>actuales</b>. Introduce tu puesto actual y el puesto al que quieres llegar (1–200).</p>
+    <h2>¿Cuántas copas para subir puestos (de cara al próximo reset)?</h2>
+    <p class="sub">Parte de tu situación en el <b>reset</b> y estima, según la tendencia de los últimos días, cuánto subirá ese corte para el reset de mañana.</p>
     <div class="fields">
       <div class="field">
-        <label for="from">Estoy en el puesto</label>
+        <label for="from">Al reset estoy en el puesto</label>
         <input id="from" type="number" min="1" max="200" value="150" inputmode="numeric">
       </div>
       <div class="field">
-        <label for="to">Quiero llegar al</label>
+        <label for="to">Quiero estar en el</label>
         <input id="to" type="number" min="1" max="200" value="100" inputmode="numeric">
       </div>
     </div>
     <div class="result" id="calcResult">—</div>
+    <p class="sub" id="calcNote" style="margin:12px 0 0"></p>
   </div>
 
   <p class="foot" id="foot">
@@ -184,9 +189,12 @@
       const delta = ((rank * 7) % 21) - 10;             // reset hoy vs reset ayer
       return { rank, current: cur, reset, delta };
     });
+    const resetArr = top.map(p => ({ rank: p.rank, trophies: p.trophies - 60 - (p.rank % 5) * 8 }));
+    const predArr = resetArr.map(p => ({ rank: p.rank, trophies: p.trophies + 45 }));
     const now = new Date().toISOString();
-    return { current_at: now, reset_at: now, reset_label: "hoy (ejemplo)",
-             previous_reset_date: "ayer", target_ranks: TARGETS, cutoffs, top200: top };
+    return { current_at: now, reset_at: now, reset_label: "hoy (ejemplo)", reset_lag_min: 6,
+             previous_reset_date: "ayer", trend_samples: 5, target_ranks: TARGETS, cutoffs,
+             top200: top, reset_top200: resetArr, pred_top200: predArr };
   }
 
   const fmtRank = r => "Top " + r.toLocaleString("es-ES");
@@ -206,7 +214,7 @@
     return top.reduce((a, b) => Math.abs(b.rank - rank) < Math.abs(a.rank - rank) ? b : a).trophies;
   }
 
-  let TOP = [];
+  let RESET = [], PRED = [], TREND_SAMPLES = 0;
 
   function render(d, isSample){
     document.getElementById("curAt").textContent = fmtHora(d.current_at);
@@ -216,8 +224,21 @@
       document.getElementById("prevWrap").hidden = false;
     } else { document.getElementById("prevWrap").hidden = true; }
     document.getElementById("sampleBadge").hidden = !isSample;
+
+    const lagEl = document.getElementById("resetLag");
+    const lag = d.reset_lag_min;
+    if (lag === null || lag === undefined){
+      lagEl.textContent = ""; lagEl.className = "lag";
+    } else if (lag <= 30){
+      lagEl.textContent = `+${lag} min tras el corte`; lagEl.className = "lag ok";
+    } else {
+      const h = Math.floor(lag / 60), m = lag % 60;
+      const txt = h ? `${h}h ${m}min` : `${m} min`;
+      lagEl.textContent = `⚠ +${txt} tras el corte (aprox.)`; lagEl.className = "lag warn";
+    }
     document.getElementById("resetAtNote").textContent =
-      d.reset_at ? "Foto del reset congelada: " + fmtHora(d.reset_at) + "." : "";
+      d.reset_at ? "Foto del reset congelada: " + fmtHora(d.reset_at)
+        + (lag != null ? ` (${lag} min tras el corte de las 04:58 UTC).` : ".") : "";
 
     const cut = {}; d.cutoffs.forEach(c => cut[c.rank] = c);
 
@@ -236,26 +257,33 @@
         <td class="delta">${deltaHTML(c.delta)}</td></tr>`
     ).join("");
 
-    TOP = d.top200 || [];
+    RESET = d.reset_top200 || [];
+    PRED = d.pred_top200 || [];
+    TREND_SAMPLES = d.trend_samples || 0;
     calc();
   }
 
   function calc(){
     const el = document.getElementById("calcResult");
-    if (!TOP.length){ el.textContent = "—"; return; }
+    const note = document.getElementById("calcNote");
+    if (!RESET.length || !PRED.length){ el.textContent = "—"; note.textContent = ""; return; }
     const from = parseInt(document.getElementById("from").value, 10);
     const to = parseInt(document.getElementById("to").value, 10);
     el.classList.remove("err");
     if (!from || !to || from < 1 || to < 1 || from > 200 || to > 200){
-      el.classList.add("err"); el.textContent = "Introduce dos puestos entre 1 y 200."; return;
+      el.classList.add("err"); el.textContent = "Introduce dos puestos entre 1 y 200."; note.textContent = ""; return;
     }
-    if (to >= from){
-      el.innerHTML = `Para <b>subir</b>, el destino debe ser un número menor que tu puesto actual (el 1 es el mejor).`;
-      return;
+    const base = trophiesAt(RESET, from);   // tus copas en el reset (corte del puesto donde estás)
+    const objetivo = trophiesAt(PRED, to);  // corte previsto del puesto objetivo en el próximo reset
+    const need = objetivo - base;
+    if (need <= 0){
+      el.innerHTML = `En el reset estás con <b>${base} 🏆</b> (${fmtRank(from)}). Según la previsión, el <b>${fmtRank(to)}</b> del próximo reset rondará <b>${objetivo} 🏆</b>, por debajo de lo tuyo: no necesitarías sumar nada para entrar.`;
+    } else {
+      el.innerHTML = `En el reset estás con <b>${base} 🏆</b> (${fmtRank(from)}). Para estar en el <b>${fmtRank(to)}</b> en el próximo reset (corte previsto ~<b>${objetivo} 🏆</b>) tendrías que sumar hoy aproximadamente<br><span class="big">+${need} copas</span>`;
     }
-    const tFrom = trophiesAt(TOP, from), tTo = trophiesAt(TOP, to);
-    el.innerHTML = `Para pasar del <b>${fmtRank(from)}</b> (${tFrom} 🏆) al <b>${fmtRank(to)}</b> (${tTo} 🏆)
-      necesitas sumar aproximadamente<br><span class="big">+${tTo - tFrom} copas</span>`;
+    note.textContent = TREND_SAMPLES >= 3
+      ? `Previsión basada en la tendencia de los últimos ${TREND_SAMPLES} días de reset.`
+      : `Previsión provisional: todavía hay pocos días de datos (${TREND_SAMPLES}). Se irá afinando según pasen los días.`;
   }
 
   document.getElementById("from").addEventListener("input", calc);

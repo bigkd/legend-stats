@@ -24,6 +24,7 @@ import datetime as dt
 import json
 import os
 import pathlib
+import statistics
 import sys
 
 import coc
@@ -113,22 +114,62 @@ def main():
 
     HIST_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Momento exacto del corte (04:58 UTC de ese dia de leyenda) para medir
+    # cuanto tardo en tomarse la foto respecto al reset.
+    corte = dt.datetime(ld.year, ld.month, ld.day, 4, 58, tzinfo=dt.timezone.utc)
+
+    def minutos_tras_corte(cap_iso):
+        cap = dt.datetime.fromisoformat(cap_iso.replace("Z", "+00:00"))
+        return max(0, round((cap - corte).total_seconds() / 60))
+
     # Foto del RESET: se congela en la 1a ejecucion del dia de leyenda.
     if reset_file.exists() and not forzar:
         with open(reset_file, encoding="utf-8") as fh:
             reset_data = json.load(fh)
         reset_top = reset_data["top200"]
         reset_at = reset_data.get("reset_at", now_iso)
+        reset_lag = reset_data.get("reset_lag_min")
+        if reset_lag is None:
+            reset_lag = minutos_tras_corte(reset_at)
         congelada = False
     else:
         reset_top = current_top
         reset_at = now_iso
+        reset_lag = minutos_tras_corte(reset_at)
         with open(reset_file, "w", encoding="utf-8") as fh:
             json.dump({"legend_day": ld_iso, "reset_at": reset_at,
-                       "top200": reset_top}, fh, ensure_ascii=False, indent=2)
+                       "reset_lag_min": reset_lag, "top200": reset_top},
+                      fh, ensure_ascii=False, indent=2)
         congelada = True
 
     prev_date, prev_map = reset_previo(ld_iso)
+
+    # --- Tendencia y prediccion del proximo reset ---
+    # Cargamos todas las fotos de reset guardadas (incluida la de hoy) y, para
+    # cada puesto, calculamos cuanto suele subir su corte de un reset al siguiente
+    # (mediana de los ultimos 7 cambios diarios -> robusta ante el reset de temporada).
+    series = []
+    for f in sorted(HIST_DIR.glob("*.json")):
+        try:
+            with open(f, encoding="utf-8") as fh:
+                dd = json.load(fh)
+        except Exception:
+            continue
+        series.append({p["rank"]: p["trophies"] for p in dd.get("top200", [])})
+
+    def tendencia(rank):
+        diffs = []
+        for i in range(1, len(series)):
+            a, b = series[i - 1].get(rank), series[i].get(rank)
+            if a is not None and b is not None:
+                diffs.append(b - a)
+        diffs = diffs[-7:]
+        return statistics.median(diffs) if diffs else 0
+
+    trend_samples = min(max(len(series) - 1, 0), 7)
+    reset_top200 = [{"rank": p["rank"], "trophies": p["trophies"]} for p in reset_top]
+    pred_top200 = [{"rank": p["rank"], "trophies": round(p["trophies"] + tendencia(p["rank"]))}
+                   for p in reset_top]
 
     cutoffs = []
     for rank in TARGET_RANKS:
@@ -143,16 +184,20 @@ def main():
         "reset_at": reset_at,
         "legend_day": ld_iso,
         "reset_label": etiqueta_fecha(ld),
+        "reset_lag_min": reset_lag,
         "previous_reset_date": prev_date,
+        "trend_samples": trend_samples,
         "target_ranks": TARGET_RANKS,
         "cutoffs": cutoffs,
         "top200": current_top,
+        "reset_top200": reset_top200,
+        "pred_top200": pred_top200,
     }
     with open(DATA_DIR / "latest.json", "w", encoding="utf-8") as fh:
         json.dump(salida, fh, ensure_ascii=False, indent=2)
 
     print(f"OK. Dia de leyenda {ld_iso}. Foto del reset {'CONGELADA ahora' if congelada else 'ya existia'} "
-          f"({reset_at}). Copas actuales a {now_iso}. Reset previo: {prev_date}.")
+          f"({reset_at}, {reset_lag} min tras el corte). Copas actuales a {now_iso}. Reset previo: {prev_date}.")
     for c in cutoffs:
         d = "n/d" if c["delta"] is None else f"{c['delta']:+d}"
         print(f"  Top {c['rank']:>4}: actual {c['current']} | reset {c['reset']} ({d})")
