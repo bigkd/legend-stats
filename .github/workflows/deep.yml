@@ -1,0 +1,47 @@
+name: Actualizar Top 2000 (profundo)
+
+on:
+  schedule:
+    - cron: "5 5 * * *"
+    - cron: "14 5 * * *"
+    - cron: "33 5 * * *"
+    - cron: "50 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-deep
+  cancel-in-progress: false
+
+jobs:
+  deep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Reconstruir el Top 2000
+        env:
+          COC_EMAIL: ${{ secrets.COC_EMAIL }}
+          COC_PASSWORD: ${{ secrets.COC_PASSWORD }}
+        run: python fetch_deep.py
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --quiet --cached; then
+            echo "Sin cambios."
+          else
+            git commit -m "Top 2000 - reset $(date -u +%F)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase --autostash origin main && git push && break || sleep 6
+            done
+          fi
