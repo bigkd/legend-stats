@@ -1,0 +1,117 @@
+{
+  "reset_at": "2026-09-22T11:43:58Z",
+  "reset_lag_min": 406,
+  "legend_day": "2026-09-22",
+  "reset_label": "22 sep 2026",
+  "previous_reset_date": null,
+  "trend_samples": 0,
+  "pool_size": 8588,
+  "ranked_now": 2000,
+  "quality": {
+    "recon200": 5438,
+    "oficial200": 5438,
+    "diff": 0
+  },
+  "deep_ranks": [
+    1,
+    10,
+    25,
+    50,
+    100,
+    150,
+    200,
+    350,
+    500,
+    750,
+    1000,
+    1250,
+    1500,
+    2000
+  ],
+  "cutoffs": [
+    {
+      "rank": 1,
+      "reset": 5779,
+      "delta": null,
+      "pred": 5779
+    },
+    {
+      "rank": 10,
+      "reset": 5621,
+      "delta": null,
+      "pred": 5621
+    },
+    {
+      "rank": 25,
+      "reset": 5581,
+      "delta": null,
+      "pred": 5581
+    },
+    {
+      "rank": 50,
+      "reset": 5549,
+      "delta": null,
+      "pred": 5549
+    },
+    {
+      "rank": 100,
+      "reset": 5492,
+      "delta": null,
+      "pred": 5492
+    },
+    {
+      "rank": 150,
+      "reset": 5467,
+      "delta": null,
+      "pred": 5467
+    },
+    {
+      "rank": 200,
+      "reset": 5438,
+      "delta": null,
+      "pred": 5438
+    },
+    {
+      "rank": 350,
+      "reset": 5389,
+      "delta": null,
+      "pred": 5389
+    },
+    {
+      "rank": 500,
+      "reset": 5356,
+      "delta": null,
+      "pred": 5356
+    },
+    {
+      "rank": 750,
+      "reset": 5314,
+      "delta": null,
+      "pred": 5314
+    },
+    {
+      "rank": 1000,
+      "reset": 5276,
+      "delta": null,
+      "pred": 5276
+    },
+    {
+      "rank": 1250,
+      "reset": 5247,
+      "delta": null,
+      "pred": 5247
+    },
+    {
+      "rank": 1500,
+      "reset": 5221,
+      "delta": null,
+      "pred": 5221
+    },
+    {
+      "rank": 2000,
+      "reset": 5173,
+      "delta": null,
+      "pred": 5173
+    }
+  ]
+}
