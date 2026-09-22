@@ -37,8 +37,8 @@ MAX_RANK = 2000
 
 LEAGUE_ID = 29000022          # Liga Leyenda
 LEGEND_MIN = 5000             # copas minimas para estar en leyenda
-POOL_SEASONS = 3             # cuantas temporadas cerradas sembrar
-POOL_PER_SEASON = 8000       # cuantos tags coger de cada temporada
+POOL_SEASONS = 2             # cuantas temporadas cerradas sembrar
+POOL_PER_SEASON = 6000       # cuantos tags coger de cada temporada
 POLL_CONCURRENCY = 60        # sondeos simultaneos
 
 RESET_DELTA = dt.timedelta(hours=4, minutes=58)
@@ -119,7 +119,8 @@ async def sembrar_pool(client, pool):
             continue
         n = 0
         try:
-            async for rp in client.get_season_rankings(LEAGUE_ID, s):
+            it = await client.get_season_rankings(LEAGUE_ID, s)
+            async for rp in it:
                 tags.add(rp.tag)
                 n += 1
                 if n >= POOL_PER_SEASON:
@@ -137,7 +138,7 @@ async def sembrar_pool(client, pool):
 async def sondear(client, tags):
     """Devuelve {tag: trofeos} de los que estan en leyenda ahora mismo."""
     res = {}
-    sem = asyncio.Semaphore(POOL_CONCURRENCY)
+    sem = asyncio.Semaphore(POLL_CONCURRENCY)
 
     async def uno(tag):
         async with sem:
