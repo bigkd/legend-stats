@@ -32,16 +32,27 @@ jobs:
           COC_EMAIL: ${{ secrets.COC_EMAIL }}
           COC_PASSWORD: ${{ secrets.COC_PASSWORD }}
         run: python fetch_deep.py
-      - name: Guardar
+      - name: Guardar los datos (commit)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data
           if git diff --quiet --cached; then
-            echo "Sin cambios."
-          else
-            git commit -m "Top 2000 - reset $(date -u +%F)"
-            for i in 1 2 3 4 5; do
-              git pull --rebase --autostash origin main && git push && break || sleep 6
-            done
+            echo "Sin cambios que guardar."
+            exit 0
+          fi
+          git commit -m "Top 2000 - reset $(date -u +%F)"
+          ok=0
+          for i in $(seq 1 20); do
+            git fetch origin main || { sleep $((4 + RANDOM % 9)); continue; }
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              sleep $((4 + RANDOM % 9)); continue
+            fi
+            if git push; then ok=1; break; fi
+            sleep $((4 + RANDOM % 9))
+          done
+          if [ "$ok" != "1" ]; then
+            echo "ERROR: no se pudo guardar tras 20 intentos."
+            exit 1
           fi
