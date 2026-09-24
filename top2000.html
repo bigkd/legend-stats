@@ -233,15 +233,24 @@
     ).join("");
   }
 
+  // Leemos el dato directamente del repositorio (raw), que se actualiza al
+  // instante en cada guardado, en vez de esperar a que GitHub Pages lo refresque.
+  // Si eso fallara, caemos a la copia servida por la web y, en ultimo caso, al ejemplo.
+  const DEEP_SOURCES = [
+    "https://raw.githubusercontent.com/bigkd/legend-stats/main/data/deep.json?t=" + Date.now(),
+    "data/deep.json"
+  ];
   (async function init(){
-    let data, isSample = false;
-    try{
-      const r = await fetch("data/deep.json", { cache: "no-store" });
-      if (!r.ok) throw new Error("no data");
-      data = await r.json();
-      if (!data.cutoffs || !data.cutoffs.length) throw new Error("empty");
-    }catch(e){ data = sampleData(); isSample = true; }
-    render(data, isSample);
+    let data = null;
+    for (const u of DEEP_SOURCES){
+      try{
+        const r = await fetch(u, { cache: "no-store" });
+        if (!r.ok) continue;
+        const d = await r.json();
+        if (d.cutoffs && d.cutoffs.length){ data = d; break; }
+      }catch(e){ /* probamos la siguiente fuente */ }
+    }
+    render(data || sampleData(), !data);
   })();
 </script>
 </body>
