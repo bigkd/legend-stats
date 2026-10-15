@@ -1,10 +1,10 @@
 {
-  "current_at": "2026-10-15T00:36:13Z",
-  "reset_at": "2026-10-14T04:59:22Z",
-  "legend_day": "2026-10-14",
-  "reset_label": "14 oct 2026",
+  "current_at": "2026-10-15T04:59:26Z",
+  "reset_at": "2026-10-15T04:59:26Z",
+  "legend_day": "2026-10-15",
+  "reset_label": "15 oct 2026",
   "reset_lag_min": 1,
-  "previous_reset_date": "2026-10-13",
+  "previous_reset_date": "2026-10-14",
   "trend_samples": 7,
   "target_ranks": [
     1,
@@ -33,2157 +33,1355 @@
   "cutoffs": [
     {
       "rank": 1,
-      "current": 5528,
-      "reset": 5452,
-      "delta": 10
+      "current": 5450,
+      "reset": 5450,
+      "delta": -2
     },
     {
       "rank": 5,
-      "current": 5458,
-      "reset": 5390,
-      "delta": 19
+      "current": 5418,
+      "reset": 5418,
+      "delta": 28
     },
     {
       "rank": 10,
-      "current": 5427,
-      "reset": 5360,
-      "delta": 3
+      "current": 5386,
+      "reset": 5386,
+      "delta": 26
     },
     {
       "rank": 20,
-      "current": 5407,
-      "reset": 5349,
-      "delta": 16
-    },
-    {
-      "rank": 30,
-      "current": 5392,
-      "reset": 5330,
-      "delta": 15
-    },
-    {
-      "rank": 40,
-      "current": 5373,
-      "reset": 5307,
-      "delta": 9
-    },
-    {
-      "rank": 50,
-      "current": 5361,
-      "reset": 5295,
-      "delta": 10
-    },
-    {
-      "rank": 60,
-      "current": 5354,
-      "reset": 5277,
-      "delta": 4
-    },
-    {
-      "rank": 70,
-      "current": 5346,
-      "reset": 5272,
-      "delta": 7
-    },
-    {
-      "rank": 80,
-      "current": 5338,
-      "reset": 5267,
-      "delta": 9
-    },
-    {
-      "rank": 90,
-      "current": 5328,
-      "reset": 5262,
-      "delta": 9
-    },
-    {
-      "rank": 100,
-      "current": 5322,
-      "reset": 5260,
+      "current": 5362,
+      "reset": 5362,
       "delta": 13
     },
     {
+      "rank": 30,
+      "current": 5338,
+      "reset": 5338,
+      "delta": 8
+    },
+    {
+      "rank": 40,
+      "current": 5320,
+      "reset": 5320,
+      "delta": 13
+    },
+    {
+      "rank": 50,
+      "current": 5309,
+      "reset": 5309,
+      "delta": 14
+    },
+    {
+      "rank": 60,
+      "current": 5297,
+      "reset": 5297,
+      "delta": 20
+    },
+    {
+      "rank": 70,
+      "current": 5289,
+      "reset": 5289,
+      "delta": 17
+    },
+    {
+      "rank": 80,
+      "current": 5282,
+      "reset": 5282,
+      "delta": 15
+    },
+    {
+      "rank": 90,
+      "current": 5278,
+      "reset": 5278,
+      "delta": 16
+    },
+    {
+      "rank": 100,
+      "current": 5274,
+      "reset": 5274,
+      "delta": 14
+    },
+    {
       "rank": 110,
-      "current": 5319,
-      "reset": 5257,
-      "delta": 12
+      "current": 5271,
+      "reset": 5271,
+      "delta": 14
     },
     {
       "rank": 120,
-      "current": 5313,
-      "reset": 5254,
+      "current": 5268,
+      "reset": 5268,
       "delta": 14
     },
     {
       "rank": 130,
-      "current": 5309,
-      "reset": 5250,
-      "delta": 12
-    },
-    {
-      "rank": 140,
-      "current": 5304,
-      "reset": 5248,
-      "delta": 14
-    },
-    {
-      "rank": 150,
-      "current": 5299,
-      "reset": 5244,
-      "delta": 13
-    },
-    {
-      "rank": 160,
-      "current": 5296,
-      "reset": 5243,
+      "current": 5265,
+      "reset": 5265,
       "delta": 15
     },
     {
+      "rank": 140,
+      "current": 5263,
+      "reset": 5263,
+      "delta": 15
+    },
+    {
+      "rank": 150,
+      "current": 5260,
+      "reset": 5260,
+      "delta": 16
+    },
+    {
+      "rank": 160,
+      "current": 5257,
+      "reset": 5257,
+      "delta": 14
+    },
+    {
       "rank": 170,
-      "current": 5294,
-      "reset": 5239,
-      "delta": 13
+      "current": 5254,
+      "reset": 5254,
+      "delta": 15
     },
     {
       "rank": 180,
-      "current": 5292,
-      "reset": 5237,
-      "delta": 13
+      "current": 5251,
+      "reset": 5251,
+      "delta": 14
     },
     {
       "rank": 190,
-      "current": 5289,
-      "reset": 5235,
-      "delta": 13
+      "current": 5249,
+      "reset": 5249,
+      "delta": 14
     },
     {
       "rank": 200,
-      "current": 5287,
-      "reset": 5233,
-      "delta": 13
+      "current": 5247,
+      "reset": 5247,
+      "delta": 14
     }
   ],
   "top200": [
     {
       "rank": 1,
-      "name": "DSM♦️DANI¹",
-      "tag": "#L8CVVQJ0",
-      "trophies": 5528
+      "name": "DSM♦️HaK",
+      "tag": "#20JJ9CCQJ",
+      "trophies": 5450
     },
     {
       "rank": 2,
-      "name": "DSM♦️HaK",
-      "tag": "#20JJ9CCQJ",
-      "trophies": 5509
+      "name": "DSM♦️DANI¹",
+      "tag": "#L8CVVQJ0",
+      "trophies": 5448
     },
     {
       "rank": 3,
       "name": "ＡＴＣ❄️ＹＥＨＩＡ",
       "tag": "#PG9CJ8UJV",
-      "trophies": 5470
+      "trophies": 5430
     },
     {
       "rank": 4,
-      "name": "☪️MR İLLEGAL ☪️",
-      "tag": "#YJ9Q89CJ0",
-      "trophies": 5470
-    },
-    {
-      "rank": 5,
-      "name": "STRN Phoenix",
-      "tag": "#9JJJJ8V02",
-      "trophies": 5458
-    },
-    {
-      "rank": 6,
-      "name": "大宗师",
-      "tag": "#P09J9VCVY",
-      "trophies": 5451
-    },
-    {
-      "rank": 7,
-      "name": "Blanc",
-      "tag": "#88RJYP2YU",
-      "trophies": 5451
-    },
-    {
-      "rank": 8,
-      "name": "ARJUN",
-      "tag": "#LQCJ08C8R",
-      "trophies": 5434
-    },
-    {
-      "rank": 9,
-      "name": "seatrus 写輪眼",
-      "tag": "#L9YUQGPUJ",
-      "trophies": 5432
-    },
-    {
-      "rank": 10,
-      "name": "Kkogdu",
-      "tag": "#9Y8UUGU2L",
-      "trophies": 5427
-    },
-    {
-      "rank": 11,
-      "name": "Angela©️™️",
-      "tag": "#YV9PYY8C",
-      "trophies": 5426
-    },
-    {
-      "rank": 12,
-      "name": "UH❄️MARLOS❄️BB",
-      "tag": "#YVCYCPUU0",
-      "trophies": 5425
-    },
-    {
-      "rank": 13,
       "name": "ATC❄️ＷＩＮＴＥＲ 〆",
       "tag": "#29CG0U0PR",
       "trophies": 5424
     },
     {
-      "rank": 14,
-      "name": "VISHWA◤ⒾⓈⓈⓁ™",
-      "tag": "#8CRQ09PP2",
-      "trophies": 5423
+      "rank": 5,
+      "name": "STRN Phoenix",
+      "tag": "#9JJJJ8V02",
+      "trophies": 5418
     },
     {
-      "rank": 15,
-      "name": "CE Kai",
-      "tag": "#8GRV0PGGP",
-      "trophies": 5420
+      "rank": 6,
+      "name": "Blanc",
+      "tag": "#88RJYP2YU",
+      "trophies": 5411
     },
     {
-      "rank": 16,
-      "name": "ATC ♥️ ELENA™",
-      "tag": "#Y922RRGQC",
-      "trophies": 5412
-    },
-    {
-      "rank": 17,
-      "name": "素心",
-      "tag": "#PPV2CQ8UU",
-      "trophies": 5410
-    },
-    {
-      "rank": 18,
-      "name": "GOD’S⚡️BigKD",
-      "tag": "#QY2YYRJV",
-      "trophies": 5408
-    },
-    {
-      "rank": 19,
-      "name": "ジコったー",
-      "tag": "#L8LYRYV0L",
-      "trophies": 5408
-    },
-    {
-      "rank": 20,
-      "name": "真寻",
-      "tag": "#G0JCRJQ0R",
-      "trophies": 5407
-    },
-    {
-      "rank": 21,
-      "name": "ATC❄️Ewan23",
-      "tag": "#2V92P2P80",
-      "trophies": 5406
-    },
-    {
-      "rank": 22,
-      "name": "Rest❤️Ren",
-      "tag": "#LQVRQURR8",
-      "trophies": 5406
-    },
-    {
-      "rank": 23,
-      "name": "UH❄️DAVI❄️BB",
-      "tag": "#YVQ9PCQVV",
-      "trophies": 5403
-    },
-    {
-      "rank": 24,
-      "name": "Hang Jeb∆t",
-      "tag": "#2Q9JL9Q99",
-      "trophies": 5402
-    },
-    {
-      "rank": 25,
-      "name": "MonkeCalm",
-      "tag": "#8RLY8J2J",
-      "trophies": 5402
-    },
-    {
-      "rank": 26,
-      "name": "Хоширама Сенджу",
-      "tag": "#Q08G8P0UY",
-      "trophies": 5401
-    },
-    {
-      "rank": 27,
-      "name": "BS EDUARDO ^_^",
-      "tag": "#G2J0Y9L80",
-      "trophies": 5400
-    },
-    {
-      "rank": 28,
+      "rank": 7,
       "name": "Nian",
       "tag": "#PGLLVRJRV",
       "trophies": 5399
     },
     {
-      "rank": 29,
-      "name": "hiroya⭐️",
-      "tag": "#LYYGYQYLU",
+      "rank": 8,
+      "name": "CE Kai",
+      "tag": "#8GRV0PGGP",
       "trophies": 5397
     },
     {
-      "rank": 30,
-      "name": "❤️الهام❤️ ♛ ᴹᵃˣ",
-      "tag": "#92CQ20J02",
-      "trophies": 5392
+      "rank": 9,
+      "name": "☪️MR İLLEGAL ☪️",
+      "tag": "#YJ9Q89CJ0",
+      "trophies": 5390
     },
     {
-      "rank": 31,
-      "name": "hiroya",
-      "tag": "#Q22VV0LC",
-      "trophies": 5389
+      "rank": 10,
+      "name": "Angela©️™️",
+      "tag": "#YV9PYY8C",
+      "trophies": 5386
     },
     {
-      "rank": 32,
-      "name": "꧁༺ʀv.ʟιɴн❤тíɴн༻",
-      "tag": "#92YR0RLJ8",
-      "trophies": 5384
-    },
-    {
-      "rank": 33,
-      "name": "⭐️AMMAR⭐️",
-      "tag": "#PVYCL2JPY",
+      "rank": 11,
+      "name": "VISHWA◤ⒾⓈⓈⓁ™",
+      "tag": "#8CRQ09PP2",
       "trophies": 5383
     },
     {
-      "rank": 34,
-      "name": "S.A superman",
-      "tag": "#2JG99Q0QC",
-      "trophies": 5381
+      "rank": 12,
+      "name": "真寻",
+      "tag": "#G0JCRJQ0R",
+      "trophies": 5383
     },
     {
-      "rank": 35,
-      "name": "Jame 1",
-      "tag": "#QLU2LCUVR",
+      "rank": 13,
+      "name": "ATC❄️Ewan23",
+      "tag": "#2V92P2P80",
       "trophies": 5380
     },
     {
-      "rank": 36,
+      "rank": 14,
       "name": "Mr.Khan❤️Ali525",
       "tag": "#2R8LLCJ9",
       "trophies": 5380
     },
     {
-      "rank": 37,
-      "name": "MoNsTeR",
-      "tag": "#2R92LQ0RG",
-      "trophies": 5379
+      "rank": 15,
+      "name": "Heart Piercing™",
+      "tag": "#LU0CLYVRP",
+      "trophies": 5376
     },
     {
-      "rank": 38,
-      "name": "VISHWA◤ⒾⓈⓈⓁ™",
-      "tag": "#PPJQC8VYV",
-      "trophies": 5378
-    },
-    {
-      "rank": 39,
-      "name": "XiYan✨FC",
-      "tag": "#2V2LRCL2U",
-      "trophies": 5377
-    },
-    {
-      "rank": 40,
-      "name": "Online♠️kids",
-      "tag": "#2V2QV0RR2",
+      "rank": 16,
+      "name": "UH❄️DAVI❄️BB",
+      "tag": "#YVQ9PCQVV",
       "trophies": 5373
     },
     {
-      "rank": 41,
-      "name": "♠️Bяo✨蘆筍",
-      "tag": "#LVPJVYC0",
-      "trophies": 5369
-    },
-    {
-      "rank": 42,
-      "name": "名将✨",
-      "tag": "#QV8RUG8L8",
-      "trophies": 5369
-    },
-    {
-      "rank": 43,
-      "name": "☆•• eli ••☆",
-      "tag": "#G99V880L",
-      "trophies": 5369
-    },
-    {
-      "rank": 44,
+      "rank": 17,
       "name": "ATC⚡️AMMAR⚡️",
       "tag": "#P8CYY082J",
       "trophies": 5368
     },
     {
-      "rank": 45,
-      "name": "재진",
-      "tag": "#22PGUYU09",
-      "trophies": 5368
-    },
-    {
-      "rank": 46,
-      "name": "Trung Tôm",
-      "tag": "#YPLYJ9PQ2",
-      "trophies": 5366
-    },
-    {
-      "rank": 47,
+      "rank": 18,
       "name": "本土❤️Momo OuO",
       "tag": "#G92YYP292",
       "trophies": 5366
     },
     {
-      "rank": 48,
-      "name": "江上✨ 今生迷弟版钒err噻",
-      "tag": "#2P80Q9CRL",
-      "trophies": 5366
+      "rank": 19,
+      "name": "☆♠️CØLØNEL♠️☆",
+      "tag": "#9PR2L8P90",
+      "trophies": 5365
     },
     {
-      "rank": 49,
-      "name": "Kent James",
-      "tag": "#8UPG9LCPC",
-      "trophies": 5364
+      "rank": 20,
+      "name": "Mouth Breather",
+      "tag": "#QUCRRQJPJ",
+      "trophies": 5362
     },
     {
-      "rank": 50,
-      "name": "SSS⚡️HaiKoii",
-      "tag": "#PCUJPGQ9",
-      "trophies": 5361
+      "rank": 21,
+      "name": "hiroya",
+      "tag": "#Q22VV0LC",
+      "trophies": 5362
     },
     {
-      "rank": 51,
-      "name": "꧁༺ɴɢʜɪêᴍᴅᴢ༻꧂",
-      "tag": "#P9PQ98R2L",
-      "trophies": 5359
-    },
-    {
-      "rank": 52,
-      "name": "本土❤️尋真✨",
-      "tag": "#L98U09GRY",
-      "trophies": 5358
-    },
-    {
-      "rank": 53,
-      "name": "P❌T VIVEK",
-      "tag": "#PGRRJ90QL",
-      "trophies": 5358
-    },
-    {
-      "rank": 54,
-      "name": "よっしゃん",
-      "tag": "#CLQ9UCCU",
+      "rank": 22,
+      "name": "hiroya⭐️",
+      "tag": "#LYYGYQYLU",
       "trophies": 5357
     },
     {
-      "rank": 55,
-      "name": "BigPapa",
-      "tag": "#CYYLQ82G",
-      "trophies": 5356
-    },
-    {
-      "rank": 56,
-      "name": "SPACY",
-      "tag": "#L2RQGPJQU",
-      "trophies": 5356
-    },
-    {
-      "rank": 57,
-      "name": "ウエリーマッチョ",
-      "tag": "#C88LYQ08",
-      "trophies": 5355
-    },
-    {
-      "rank": 58,
-      "name": "Jaga五村",
-      "tag": "#VLQJRYYG",
+      "rank": 23,
+      "name": "ARJUN",
+      "tag": "#LQCJ08C8R",
       "trophies": 5354
     },
     {
-      "rank": 59,
-      "name": "번개",
-      "tag": "#P9928Q22Y",
-      "trophies": 5354
-    },
-    {
-      "rank": 60,
-      "name": "Acovio",
-      "tag": "#CPYJ9YCC",
-      "trophies": 5354
-    },
-    {
-      "rank": 61,
-      "name": "JV",
-      "tag": "#2L0890VP0",
-      "trophies": 5353
-    },
-    {
-      "rank": 62,
-      "name": "Artemida❤️Rina",
-      "tag": "#L8QP2JL8J",
-      "trophies": 5350
-    },
-    {
-      "rank": 63,
-      "name": "BB✨ Lynn",
-      "tag": "#QP9JY9LGY",
-      "trophies": 5350
-    },
-    {
-      "rank": 64,
-      "name": "Reze❄️",
-      "tag": "#9JY202YCC",
-      "trophies": 5349
-    },
-    {
-      "rank": 65,
-      "name": "DSM♦️ELRaYeSs",
-      "tag": "#RLLYLU09",
-      "trophies": 5349
-    },
-    {
-      "rank": 66,
-      "name": "Online24Noizz",
-      "tag": "#YYRU29LPQ",
-      "trophies": 5349
-    },
-    {
-      "rank": 67,
-      "name": "LORD⚜️LAST HOPE",
-      "tag": "#9YGU0900P",
+      "rank": 24,
+      "name": "MG Leap",
+      "tag": "#288UYQ8GY",
       "trophies": 5348
     },
     {
-      "rank": 68,
-      "name": "DSM♦️TEAM",
-      "tag": "#RP2V008U",
-      "trophies": 5348
-    },
-    {
-      "rank": 69,
-      "name": "Dysteria",
-      "tag": "#L28VCYL0J",
-      "trophies": 5347
-    },
-    {
-      "rank": 70,
-      "name": "『ＯＮＥ』❄️ＫＲＡＴＯＳ²☠",
-      "tag": "#GQQUQ2C0",
-      "trophies": 5346
-    },
-    {
-      "rank": 71,
-      "name": "PIETRO",
-      "tag": "#2Q9UUG9VP",
-      "trophies": 5346
-    },
-    {
-      "rank": 72,
-      "name": "肌霸猫",
-      "tag": "#8Y8G8LPJ9",
-      "trophies": 5345
-    },
-    {
-      "rank": 73,
-      "name": "⭐Ƭȑ⭐İRONCLAD",
-      "tag": "#LQQ0PQQQP",
+      "rank": 25,
+      "name": "♠️Bяo✨蘆筍",
+      "tag": "#LVPJVYC0",
       "trophies": 5344
     },
     {
-      "rank": 74,
-      "name": "『ＩＱ』ＧＨＯＳＴ™️",
-      "tag": "#YC0PCRLQL",
-      "trophies": 5344
-    },
-    {
-      "rank": 75,
-      "name": "Itz Prodigy",
-      "tag": "#GJ889RC2",
-      "trophies": 5342
-    },
-    {
-      "rank": 76,
+      "rank": 26,
       "name": "DSM♦️QWASMI",
       "tag": "#2LVLPLP2G",
       "trophies": 5341
     },
     {
-      "rank": 77,
-      "name": "Hang Kasturi",
-      "tag": "#9JLYJ2QV0",
+      "rank": 27,
+      "name": "Jame 1",
+      "tag": "#QLU2LCUVR",
       "trophies": 5340
     },
     {
-      "rank": 78,
-      "name": "Rm⭐leader",
-      "tag": "#PV0JLLCVV",
+      "rank": 28,
+      "name": "ATC ♥️ ELENA™",
+      "tag": "#Y922RRGQC",
       "trophies": 5340
     },
     {
-      "rank": 79,
-      "name": "SYD",
-      "tag": "#PLRP28CCJ",
+      "rank": 29,
+      "name": "VISHWA◤ⒾⓈⓈⓁ™",
+      "tag": "#PPJQC8VYV",
       "trophies": 5338
     },
     {
-      "rank": 80,
+      "rank": 30,
       "name": "ʚ J.S. ɞ✨ Qing",
       "tag": "#28UR02Q8U",
       "trophies": 5338
     },
     {
-      "rank": 81,
-      "name": "NAiF_240",
-      "tag": "#88PLY220Y",
-      "trophies": 5338
-    },
-    {
-      "rank": 82,
-      "name": "Nian",
-      "tag": "#20R8QCGCP",
+      "rank": 31,
+      "name": "Hang Jeb∆t",
+      "tag": "#2Q9JL9Q99",
       "trophies": 5337
     },
     {
-      "rank": 83,
-      "name": "太极☯️Winter",
-      "tag": "#GP8Y0YVUJ",
-      "trophies": 5335
+      "rank": 32,
+      "name": "Rest❤️Ren",
+      "tag": "#LQVRQURR8",
+      "trophies": 5336
     },
     {
-      "rank": 84,
-      "name": "风暴之城",
-      "tag": "#QGGRRCURV",
+      "rank": 33,
+      "name": "「WW」✨Mommy Ay✨",
+      "tag": "#22CU9QCUR",
       "trophies": 5332
     },
     {
-      "rank": 85,
-      "name": "dennis lin",
-      "tag": "#9RGCUL8Q9",
-      "trophies": 5332
-    },
-    {
-      "rank": 86,
-      "name": "Vegeta♦️",
-      "tag": "#29UQ8VQC8",
+      "rank": 34,
+      "name": "TiaQvQ",
+      "tag": "#Q9PGCR9PP",
       "trophies": 5331
     },
     {
-      "rank": 87,
+      "rank": 35,
       "name": "ＡＴＣ✨ツＹＥＨＩＡツ",
       "tag": "#9C2YPR8UL",
       "trophies": 5331
     },
     {
-      "rank": 88,
+      "rank": 36,
+      "name": "大宗师",
+      "tag": "#P09J9VCVY",
+      "trophies": 5329
+    },
+    {
+      "rank": 37,
       "name": "ＡＴＣ➢ＦＡツ",
       "tag": "#2CRLCGRVG",
       "trophies": 5329
     },
     {
-      "rank": 89,
-      "name": "Vô Tình♠️MAD",
-      "tag": "#P8J02YR2P",
-      "trophies": 5328
+      "rank": 38,
+      "name": "UH❄️MARLOS❄️BB",
+      "tag": "#YVCYCPUU0",
+      "trophies": 5329
     },
     {
-      "rank": 90,
-      "name": "Skyline",
-      "tag": "#QRGUJLYY8",
-      "trophies": 5328
-    },
-    {
-      "rank": 91,
-      "name": "『|•彡』B®️YAN",
-      "tag": "#YVLUPRRU",
-      "trophies": 5326
-    },
-    {
-      "rank": 92,
-      "name": "Vô Tình⚡️MAD",
-      "tag": "#8RV9P8CRJ",
-      "trophies": 5325
-    },
-    {
-      "rank": 93,
-      "name": "ATC ๛ Yunus ツ",
-      "tag": "#GGJ2CGP0",
-      "trophies": 5325
-    },
-    {
-      "rank": 94,
-      "name": "NXV Ponta",
-      "tag": "#JQLGVGV",
-      "trophies": 5323
-    },
-    {
-      "rank": 95,
-      "name": "Reze❣️",
-      "tag": "#P0Y0Q9G9J",
-      "trophies": 5323
-    },
-    {
-      "rank": 96,
-      "name": "Ｏ ֆ Ａ Ɱ Ａ「迹」MAD",
-      "tag": "#Y8R2JC0JU",
-      "trophies": 5323
-    },
-    {
-      "rank": 97,
-      "name": "惜别梦初回",
-      "tag": "#QURCQ9Q",
+      "rank": 39,
+      "name": "MonkeCalm",
+      "tag": "#8RLY8J2J",
       "trophies": 5322
     },
     {
-      "rank": 98,
-      "name": "ZOOS Yatta",
-      "tag": "#PPVYC88R",
-      "trophies": 5322
-    },
-    {
-      "rank": 99,
-      "name": "RNG Santiago",
-      "tag": "#2VQPVRLRJ",
-      "trophies": 5322
-    },
-    {
-      "rank": 100,
-      "name": "Jatin",
-      "tag": "#PYLG0RPGJ",
-      "trophies": 5322
-    },
-    {
-      "rank": 101,
-      "name": "ATC❄️OSMAN",
-      "tag": "#LRC098YLL",
-      "trophies": 5321
-    },
-    {
-      "rank": 102,
-      "name": "dIs♦️ANAsJARNAZ",
-      "tag": "#8R2VC98Y",
-      "trophies": 5321
-    },
-    {
-      "rank": 103,
-      "name": "KHAN❣️MELONA",
-      "tag": "#89PG8222P",
-      "trophies": 5321
-    },
-    {
-      "rank": 104,
-      "name": "Ｏ ֆ Ａ Ɱ Ａ「々」MAD",
-      "tag": "#8LYUJLYVJ",
-      "trophies": 5320
-    },
-    {
-      "rank": 105,
-      "name": "앵거스",
-      "tag": "#G98JQYYVY",
-      "trophies": 5320
-    },
-    {
-      "rank": 106,
-      "name": "坤天帝",
-      "tag": "#YV8YCQ8JC",
-      "trophies": 5320
-    },
-    {
-      "rank": 107,
-      "name": "⚠CơN❤LốC⚠",
-      "tag": "#VVR08YPL",
-      "trophies": 5320
-    },
-    {
-      "rank": 108,
-      "name": "៚L.2.P៚ Leap",
-      "tag": "#2Y2R2GL9Q",
-      "trophies": 5320
-    },
-    {
-      "rank": 109,
+      "rank": 40,
       "name": "ᵀᵀᴺ HUSKY♦️DOG",
       "tag": "#U2UYLRV",
       "trophies": 5320
     },
     {
-      "rank": 110,
-      "name": "naff",
-      "tag": "#JQUYG9C2",
-      "trophies": 5319
-    },
-    {
-      "rank": 111,
-      "name": "Shifu Joep!",
-      "tag": "#22Q9RYPPP",
-      "trophies": 5318
-    },
-    {
-      "rank": 112,
-      "name": "[187] Matej",
-      "tag": "#9RGG2LJV",
-      "trophies": 5318
-    },
-    {
-      "rank": 113,
-      "name": "【PG】R0LAᴸᴼⱽᴱ",
-      "tag": "#8QQ0UYJ0G",
+      "rank": 41,
+      "name": "XiYou",
+      "tag": "#GCJ2UJ0RY",
       "trophies": 5317
     },
     {
-      "rank": 114,
-      "name": "RNG ERIK",
-      "tag": "#9J98UYP89",
+      "rank": 42,
+      "name": "江上✨归去来兮",
+      "tag": "#YUGJC2LJ2",
       "trophies": 5316
     },
     {
-      "rank": 115,
-      "name": "CeBeRuS ReD",
-      "tag": "#PV0CYRG82",
-      "trophies": 5316
-    },
-    {
-      "rank": 116,
-      "name": "Mr.KravenIShere",
-      "tag": "#2PPCJ0QR9",
+      "rank": 43,
+      "name": "ウエリーマッチョ",
+      "tag": "#C88LYQ08",
       "trophies": 5315
     },
     {
-      "rank": 117,
-      "name": "STARs⭐️MAD★☆★☆★",
-      "tag": "#90P22YQU",
+      "rank": 44,
+      "name": "Jeby",
+      "tag": "#YQ0VV0VQ",
+      "trophies": 5315
+    },
+    {
+      "rank": 45,
+      "name": "P7 King",
+      "tag": "#P0RYRRPQY",
       "trophies": 5314
     },
     {
-      "rank": 118,
-      "name": "DSM☆♦️☆HASSAN",
-      "tag": "#9VVPVUG0",
-      "trophies": 5314
-    },
-    {
-      "rank": 119,
-      "name": "美乃滋算不算一種樂器",
-      "tag": "#82RV9CV8C",
+      "rank": 46,
+      "name": "⭐️AMMAR⭐️",
+      "tag": "#PVYCL2JPY",
       "trophies": 5313
     },
     {
-      "rank": 120,
-      "name": "ibra",
-      "tag": "#2V92RP99",
-      "trophies": 5313
-    },
-    {
-      "rank": 121,
-      "name": "navid",
-      "tag": "#L8VY08QVQ",
-      "trophies": 5312
-    },
-    {
-      "rank": 122,
-      "name": "ＶＯＮ'Ｓ",
-      "tag": "#PJCCPQGLJ",
-      "trophies": 5312
-    },
-    {
-      "rank": 123,
-      "name": "NXV Ryo",
-      "tag": "#28VUQUGYG",
-      "trophies": 5312
-    },
-    {
-      "rank": 124,
-      "name": "RODRIGUES™",
-      "tag": "#20RRJPVR0",
-      "trophies": 5311
-    },
-    {
-      "rank": 125,
+      "rank": 47,
       "name": "ATC❄️DRA❤️FAHAD",
       "tag": "#YQC2YLPGC",
       "trophies": 5311
     },
     {
-      "rank": 126,
-      "name": "2Ez4Rwinnn杰亗",
-      "tag": "#2YL8P9RYG",
-      "trophies": 5311
-    },
-    {
-      "rank": 127,
-      "name": "靈魂",
-      "tag": "#8QYLPP090",
-      "trophies": 5311
-    },
-    {
-      "rank": 128,
-      "name": "Dr.Derpy",
-      "tag": "#29RY0QCJR",
-      "trophies": 5311
-    },
-    {
-      "rank": 129,
-      "name": "Rush",
-      "tag": "#28JUR2L9Q",
+      "rank": 48,
+      "name": "QWASMI.ARAB COC",
+      "tag": "#C2PY2CLJ",
       "trophies": 5310
     },
     {
-      "rank": 130,
-      "name": "江上✨PanPan",
-      "tag": "#U2C9PP0P",
+      "rank": 49,
+      "name": "BB✨ Lynn",
+      "tag": "#QP9JY9LGY",
+      "trophies": 5310
+    },
+    {
+      "rank": 50,
+      "name": "DSM♦️ELRaYeSs",
+      "tag": "#RLLYLU09",
       "trophies": 5309
     },
     {
-      "rank": 131,
-      "name": "Md. Abu Sayeed",
-      "tag": "#LVGV0U0CQ",
-      "trophies": 5307
+      "rank": 51,
+      "name": "Online24Noizz",
+      "tag": "#YYRU29LPQ",
+      "trophies": 5309
     },
     {
-      "rank": 132,
-      "name": "داریوش",
-      "tag": "#2LGL0PJQJ",
-      "trophies": 5307
-    },
-    {
-      "rank": 133,
-      "name": "Meli",
-      "tag": "#9CVGUVLU8",
-      "trophies": 5307
-    },
-    {
-      "rank": 134,
+      "rank": 52,
       "name": "阿牛✨FC",
       "tag": "#8QC9CJ2U",
       "trophies": 5307
     },
     {
-      "rank": 135,
-      "name": "ATC Big Boss",
-      "tag": "#88QJGYVVU",
+      "rank": 53,
+      "name": "BigPapa",
+      "tag": "#CYYLQ82G",
       "trophies": 5306
     },
     {
-      "rank": 136,
-      "name": "江上✨雪落盡冬辭",
-      "tag": "#9G0QLQCLJ",
-      "trophies": 5306
-    },
-    {
-      "rank": 137,
-      "name": "TD Pmad",
-      "tag": "#RQ28QCYL",
-      "trophies": 5305
-    },
-    {
-      "rank": 138,
-      "name": "QWASMI",
-      "tag": "#YR90QJ2R8",
-      "trophies": 5305
-    },
-    {
-      "rank": 139,
-      "name": "❗ ♦愛ㅤBLACKㅤ愛♦ ❗",
-      "tag": "#JUC0U9RU",
+      "rank": 54,
+      "name": "៚L.2.P៚ Leap",
+      "tag": "#2Y2R2GL9Q",
       "trophies": 5304
     },
     {
-      "rank": 140,
-      "name": "SSS❤️TTH•Nguyệt",
-      "tag": "#YQGQ2VLU8",
-      "trophies": 5304
+      "rank": 55,
+      "name": "⚡️PG❤️ZOOS⚡️",
+      "tag": "#2PUQ29UGJ",
+      "trophies": 5303
     },
     {
-      "rank": 141,
-      "name": "surajit",
-      "tag": "#P8VGL9VL0",
-      "trophies": 5304
-    },
-    {
-      "rank": 142,
-      "name": "ＡＴＣ⚡ＹＥＨＩＡ",
-      "tag": "#8R9PVRY9R",
-      "trophies": 5304
-    },
-    {
-      "rank": 143,
-      "name": "植木鉢",
-      "tag": "#QGJPJJ2R9",
-      "trophies": 5302
-    },
-    {
-      "rank": 144,
-      "name": "NotPat",
-      "tag": "#L2Q8PGJRV",
+      "rank": 56,
+      "name": "江上✨尤克里里",
+      "tag": "#QVR2JGCUR",
       "trophies": 5301
     },
     {
-      "rank": 145,
-      "name": "机器 King Tiago",
-      "tag": "#8QLJJV2JJ",
-      "trophies": 5301
-    },
-    {
-      "rank": 146,
-      "name": "VISHWA◤ⒾⓈⓈⓁ™️",
-      "tag": "#YJC8L8LPV",
-      "trophies": 5301
-    },
-    {
-      "rank": 147,
-      "name": "viking",
-      "tag": "#2CVRRGP9",
+      "rank": 57,
+      "name": "Ｏ ֆ Ａ Ɱ Ａ「々」MAD",
+      "tag": "#8LYUJLYVJ",
       "trophies": 5300
     },
     {
-      "rank": 148,
-      "name": "PONTA⭐️⭐️⭐️",
-      "tag": "#G99V2VLGP",
+      "rank": 58,
+      "name": "Hang Kasturi",
+      "tag": "#9JLYJ2QV0",
       "trophies": 5300
     },
     {
-      "rank": 149,
-      "name": "infinity",
-      "tag": "#2QU2P2QU2",
-      "trophies": 5299
-    },
-    {
-      "rank": 150,
-      "name": "kaung",
-      "tag": "#8CR8LJLR2",
-      "trophies": 5299
-    },
-    {
-      "rank": 151,
-      "name": "SONIC SKIBIDII",
-      "tag": "#CYRGCYP",
-      "trophies": 5299
-    },
-    {
-      "rank": 152,
-      "name": "Taengsu",
-      "tag": "#9Q80PLQPQ",
+      "rank": 59,
+      "name": "江上✨云深不知处",
+      "tag": "#8G9RQL9JJ",
       "trophies": 5298
     },
     {
-      "rank": 153,
-      "name": "सुमित | PF",
-      "tag": "#2YJJC0Y0U",
-      "trophies": 5298
-    },
-    {
-      "rank": 154,
-      "name": "IM KİNG RAGNAR♦",
-      "tag": "#PU28YLQPJ",
-      "trophies": 5298
-    },
-    {
-      "rank": 155,
-      "name": "SurajCR7",
-      "tag": "#Q9CRJP82G",
+      "rank": 60,
+      "name": "Nian",
+      "tag": "#20R8QCGCP",
       "trophies": 5297
     },
     {
-      "rank": 156,
-      "name": "SL Amila™️",
-      "tag": "#PCPL98PVU",
+      "rank": 61,
+      "name": "XiYan✨FC",
+      "tag": "#2V2LRCL2U",
       "trophies": 5297
     },
     {
-      "rank": 157,
+      "rank": 62,
       "name": "✎﹏﹏PHÚ﹏﹏✍",
       "tag": "#CV8QVCR8",
       "trophies": 5296
     },
     {
-      "rank": 158,
-      "name": "SSS⚡️Dokki ❤️",
-      "tag": "#9Y9RGGPV2",
-      "trophies": 5296
-    },
-    {
-      "rank": 159,
-      "name": "Lattenschuss",
-      "tag": "#UQJLU0RL",
-      "trophies": 5296
-    },
-    {
-      "rank": 160,
-      "name": "♠️Bяo✨泥玛",
-      "tag": "#QV8J889JU",
-      "trophies": 5296
-    },
-    {
-      "rank": 161,
-      "name": "R a f f a",
-      "tag": "#UL8JLR2G",
-      "trophies": 5296
-    },
-    {
-      "rank": 162,
-      "name": "꧁༺ɴɢʜɪêᴍĐZ༻꧂",
-      "tag": "#20V8VLJQU",
-      "trophies": 5296
-    },
-    {
-      "rank": 163,
-      "name": "✎﹏﹏PHÚ﹏﹏✍",
-      "tag": "#8U2V82RVQ",
-      "trophies": 5296
-    },
-    {
-      "rank": 164,
-      "name": "Louis",
-      "tag": "#YCYQQ00VJ",
+      "rank": 63,
+      "name": "太极☯️Winter",
+      "tag": "#GP8Y0YVUJ",
       "trophies": 5295
     },
     {
-      "rank": 165,
-      "name": "JeWeL RoY @@ 1",
-      "tag": "#8YPL0R8PJ",
+      "rank": 64,
+      "name": "Mega❤️Tobifer",
+      "tag": "#889LUJCVL",
       "trophies": 5295
     },
     {
-      "rank": 166,
-      "name": "Sushant",
-      "tag": "#9CPQPRGCC",
-      "trophies": 5295
-    },
-    {
-      "rank": 167,
-      "name": "BNDZ hiroya",
-      "tag": "#9JG8UVL0",
-      "trophies": 5295
-    },
-    {
-      "rank": 168,
-      "name": "Hang Tuah",
-      "tag": "#JR808892",
-      "trophies": 5294
-    },
-    {
-      "rank": 169,
-      "name": "LA⚡MODI",
-      "tag": "#2YJCU9PCV",
-      "trophies": 5294
-    },
-    {
-      "rank": 170,
-      "name": "SURAJ❤️CR7",
-      "tag": "#PVV20J0GP",
-      "trophies": 5294
-    },
-    {
-      "rank": 171,
-      "name": "BS♦️EDUARDO♦️",
-      "tag": "#2PRC8LUJC",
-      "trophies": 5294
-    },
-    {
-      "rank": 172,
-      "name": "AVI",
-      "tag": "#G8YVJPLRY",
-      "trophies": 5294
-    },
-    {
-      "rank": 173,
-      "name": "VM Alxlc",
-      "tag": "#LUCRLQLY",
-      "trophies": 5293
-    },
-    {
-      "rank": 174,
-      "name": "kino",
-      "tag": "#G90G9PJY",
-      "trophies": 5293
-    },
-    {
-      "rank": 175,
-      "name": "⚡REGARD⚡",
-      "tag": "#98LRQLP8L",
-      "trophies": 5293
-    },
-    {
-      "rank": 176,
-      "name": "QHT.❤️LilWtorie",
-      "tag": "#PVVQPGRQL",
-      "trophies": 5293
-    },
-    {
-      "rank": 177,
-      "name": "VM Vincenzo",
-      "tag": "#PP0RVP8R",
-      "trophies": 5292
-    },
-    {
-      "rank": 178,
-      "name": "ESI HERCULES",
-      "tag": "#20J9P8LG",
-      "trophies": 5292
-    },
-    {
-      "rank": 179,
-      "name": "Cuur",
-      "tag": "#Y88L29V2R",
-      "trophies": 5292
-    },
-    {
-      "rank": 180,
+      "rank": 65,
       "name": "Mr.Hero",
       "tag": "#8PV0J2UY0",
       "trophies": 5292
     },
     {
-      "rank": 181,
-      "name": "本土❤️yeagamomo",
-      "tag": "#QJVQ20CPV",
-      "trophies": 5291
-    },
-    {
-      "rank": 182,
-      "name": "Q-mark",
-      "tag": "#G80QGJYCC",
-      "trophies": 5291
-    },
-    {
-      "rank": 183,
-      "name": "Young man....",
-      "tag": "#8CU8L088U",
-      "trophies": 5291
-    },
-    {
-      "rank": 184,
-      "name": "ErMeydanı⚡Rock",
-      "tag": "#8VYGUVJUJ",
-      "trophies": 5291
-    },
-    {
-      "rank": 185,
-      "name": "Mr.Khan❤️J!llca",
-      "tag": "#VCLYL8LV",
-      "trophies": 5291
-    },
-    {
-      "rank": 186,
-      "name": "ＬＥＧＥＮＤ",
-      "tag": "#900UU2GP2",
+      "rank": 66,
+      "name": "Kkogdu",
+      "tag": "#9Y8UUGU2L",
       "trophies": 5290
     },
     {
-      "rank": 187,
-      "name": "Mugiwara",
-      "tag": "#Q9L2QJQLQ",
+      "rank": 67,
+      "name": "KHAN❣️MELONA",
+      "tag": "#89PG8222P",
       "trophies": 5290
     },
     {
-      "rank": 188,
-      "name": "ᵀᵀᴺ BEAGLE♦️DOG",
-      "tag": "#LY982QPV",
-      "trophies": 5290
-    },
-    {
-      "rank": 189,
-      "name": "JINUMAN",
-      "tag": "#YV9U9QPPG",
+      "rank": 68,
+      "name": "Mr.WhoisR7❄️",
+      "tag": "#CYPUYUQL",
       "trophies": 5289
     },
     {
-      "rank": 190,
-      "name": "2 3 99 殉教者だから",
-      "tag": "#282892JJP",
+      "rank": 69,
+      "name": "名将✨",
+      "tag": "#QV8RUG8L8",
       "trophies": 5289
     },
     {
-      "rank": 191,
-      "name": "『E3』MOHAMMED亗 .",
-      "tag": "#9YJCLQYR8",
+      "rank": 70,
+      "name": "Хоширама Сенджу",
+      "tag": "#Q08G8P0UY",
+      "trophies": 5289
+    },
+    {
+      "rank": 71,
+      "name": "재진",
+      "tag": "#22PGUYU09",
       "trophies": 5288
     },
     {
-      "rank": 192,
-      "name": "sb SudiP",
-      "tag": "#PG8290CPP",
+      "rank": 72,
+      "name": "GOD’S⚡️BigKD",
+      "tag": "#QY2YYRJV",
       "trophies": 5288
     },
     {
-      "rank": 193,
-      "name": "A⚔️K ⚡ TÜRKER ⚡",
-      "tag": "#QYLVQ00Q2",
-      "trophies": 5288
-    },
-    {
-      "rank": 194,
-      "name": "QWASMi",
-      "tag": "#YY8QQV9R",
-      "trophies": 5288
-    },
-    {
-      "rank": 195,
-      "name": "Hatem",
-      "tag": "#YQU0QL22P",
-      "trophies": 5288
-    },
-    {
-      "rank": 196,
-      "name": "Tuna",
-      "tag": "#LC0GLP98Y",
-      "trophies": 5288
-    },
-    {
-      "rank": 197,
-      "name": "AJ❤️Kettel",
-      "tag": "#8PPV20890",
-      "trophies": 5288
-    },
-    {
-      "rank": 198,
+      "rank": 73,
       "name": "berna 2.0",
       "tag": "#LL2GPGY8J",
       "trophies": 5288
     },
     {
+      "rank": 74,
+      "name": "Jaga五村",
+      "tag": "#VLQJRYYG",
+      "trophies": 5287
+    },
+    {
+      "rank": 75,
+      "name": "江上✨ 今生迷弟版钒err噻",
+      "tag": "#2P80Q9CRL",
+      "trophies": 5286
+    },
+    {
+      "rank": 76,
+      "name": "❤️ＲＡＩＮ❤️",
+      "tag": "#29QUQC8QL",
+      "trophies": 5284
+    },
+    {
+      "rank": 77,
+      "name": "Kent James",
+      "tag": "#8UPG9LCPC",
+      "trophies": 5283
+    },
+    {
+      "rank": 78,
+      "name": "Ｏ ֆ Ａ Ɱ Ａ「迹」MAD",
+      "tag": "#Y8R2JC0JU",
+      "trophies": 5283
+    },
+    {
+      "rank": 79,
+      "name": "TD Pmad",
+      "tag": "#RQ28QCYL",
+      "trophies": 5283
+    },
+    {
+      "rank": 80,
+      "name": "seatrus 写輪眼",
+      "tag": "#L9YUQGPUJ",
+      "trophies": 5282
+    },
+    {
+      "rank": 81,
+      "name": "江上✨旧城",
+      "tag": "#QYVGYUG9G",
+      "trophies": 5282
+    },
+    {
+      "rank": 82,
+      "name": "惜别梦初回",
+      "tag": "#QURCQ9Q",
+      "trophies": 5282
+    },
+    {
+      "rank": 83,
+      "name": "2Ez4Rwinnn杰亗",
+      "tag": "#2YL8P9RYG",
+      "trophies": 5282
+    },
+    {
+      "rank": 84,
+      "name": "Jatin",
+      "tag": "#PYLG0RPGJ",
+      "trophies": 5282
+    },
+    {
+      "rank": 85,
+      "name": "ZOOS Yatta",
+      "tag": "#PPVYC88R",
+      "trophies": 5282
+    },
+    {
+      "rank": 86,
+      "name": "Rula❤️Schizo",
+      "tag": "#PQLP02V99",
+      "trophies": 5281
+    },
+    {
+      "rank": 87,
+      "name": "៚L.1.P៚ Leap",
+      "tag": "#88LCQCL8V",
+      "trophies": 5280
+    },
+    {
+      "rank": 88,
+      "name": "⚠CơN❤LốC⚠",
+      "tag": "#VVR08YPL",
+      "trophies": 5280
+    },
+    {
+      "rank": 89,
+      "name": "꧁༺ɴɢʜɪêᴍᴅᴢ༻꧂",
+      "tag": "#P9PQ98R2L",
+      "trophies": 5279
+    },
+    {
+      "rank": 90,
+      "name": "P❌T VIVEK",
+      "tag": "#PGRRJ90QL",
+      "trophies": 5278
+    },
+    {
+      "rank": 91,
+      "name": "Abo Noah",
+      "tag": "#9VVYGJRGP",
+      "trophies": 5278
+    },
+    {
+      "rank": 92,
+      "name": "萌☪️钒err噻",
+      "tag": "#Q00YYJYQ2",
+      "trophies": 5277
+    },
+    {
+      "rank": 93,
+      "name": "RNG ERIK",
+      "tag": "#9J98UYP89",
+      "trophies": 5276
+    },
+    {
+      "rank": 94,
+      "name": "SPACY",
+      "tag": "#L2RQGPJQU",
+      "trophies": 5276
+    },
+    {
+      "rank": 95,
+      "name": "よっしゃん",
+      "tag": "#CLQ9UCCU",
+      "trophies": 5276
+    },
+    {
+      "rank": 96,
+      "name": "INT MAHMOUD",
+      "tag": "#8QQ20LYVJ",
+      "trophies": 5276
+    },
+    {
+      "rank": 97,
+      "name": "محمد",
+      "tag": "#22CYQLJYY",
+      "trophies": 5275
+    },
+    {
+      "rank": 98,
+      "name": "Romy ⚡️ LK",
+      "tag": "#PY29J9QUG",
+      "trophies": 5275
+    },
+    {
+      "rank": 99,
+      "name": "⚡T/B⚡ SALOMOV",
+      "tag": "#Q0QGJ8GY0",
+      "trophies": 5275
+    },
+    {
+      "rank": 100,
+      "name": "STARs⭐️MAD★☆★☆★",
+      "tag": "#90P22YQU",
+      "trophies": 5274
+    },
+    {
+      "rank": 101,
+      "name": "美乃滋算不算一種樂器",
+      "tag": "#82RV9CV8C",
+      "trophies": 5273
+    },
+    {
+      "rank": 102,
+      "name": "딸기라떼",
+      "tag": "#JRY9UPU2",
+      "trophies": 5272
+    },
+    {
+      "rank": 103,
+      "name": "STARs⭐️MAD☆★☆★",
+      "tag": "#L20VVGLPQ",
+      "trophies": 5272
+    },
+    {
+      "rank": 104,
+      "name": "SYD",
+      "tag": "#PLRP28CCJ",
+      "trophies": 5272
+    },
+    {
+      "rank": 105,
+      "name": "CTC♦️LIND²ᶻᶻ",
+      "tag": "#QUQ82802J",
+      "trophies": 5272
+    },
+    {
+      "rank": 106,
+      "name": "☆★☆eli☆★☆",
+      "tag": "#2R89CGV8Y",
+      "trophies": 5271
+    },
+    {
+      "rank": 107,
+      "name": "Dr.Derpy",
+      "tag": "#29RY0QCJR",
+      "trophies": 5271
+    },
+    {
+      "rank": 108,
+      "name": "VictoriouX",
+      "tag": "#98G0GQL0V",
+      "trophies": 5271
+    },
+    {
+      "rank": 109,
+      "name": "RODRIGUES™",
+      "tag": "#20RRJPVR0",
+      "trophies": 5271
+    },
+    {
+      "rank": 110,
+      "name": "靈魂",
+      "tag": "#8QYLPP090",
+      "trophies": 5271
+    },
+    {
+      "rank": 111,
+      "name": "tasahara",
+      "tag": "#Q8CLLGJJQ",
+      "trophies": 5270
+    },
+    {
+      "rank": 112,
+      "name": "素心",
+      "tag": "#PPV2CQ8UU",
+      "trophies": 5270
+    },
+    {
+      "rank": 113,
+      "name": "BP Lattenschuss",
+      "tag": "#UJ9299LR",
+      "trophies": 5270
+    },
+    {
+      "rank": 114,
+      "name": "旧城与白夜",
+      "tag": "#G8RU9Y9GJ",
+      "trophies": 5269
+    },
+    {
+      "rank": 115,
+      "name": "Tompel",
+      "tag": "#PRLR0JCCR",
+      "trophies": 5269
+    },
+    {
+      "rank": 116,
+      "name": "VibingOnSkills⚡",
+      "tag": "#8V9R0QG2Q",
+      "trophies": 5268
+    },
+    {
+      "rank": 117,
+      "name": "STARs⭐️MAD☆★☆★☆",
+      "tag": "#Y0QJR2VJ",
+      "trophies": 5268
+    },
+    {
+      "rank": 118,
+      "name": "LORD⚜️LAST HOPE",
+      "tag": "#9YGU0900P",
+      "trophies": 5268
+    },
+    {
+      "rank": 119,
+      "name": "v Energyzed",
+      "tag": "#RCUJR0PJ",
+      "trophies": 5268
+    },
+    {
+      "rank": 120,
+      "name": "STARs⭐️MAD☆★☆",
+      "tag": "#2RRPUCJRC",
+      "trophies": 5268
+    },
+    {
+      "rank": 121,
+      "name": "RULA❤️ARYAN007™",
+      "tag": "#9L0QVQ2RJ",
+      "trophies": 5268
+    },
+    {
+      "rank": 122,
+      "name": "Mr.ᴡʜᴏɪꜱR7⋆⛇⋆",
+      "tag": "#8CY2LUGJY",
+      "trophies": 5267
+    },
+    {
+      "rank": 123,
+      "name": "✎﹏﹏PHÚ﹏﹏✍",
+      "tag": "#8U2V82RVQ",
+      "trophies": 5267
+    },
+    {
+      "rank": 124,
+      "name": "Cuur",
+      "tag": "#Y88L29V2R",
+      "trophies": 5267
+    },
+    {
+      "rank": 125,
+      "name": "Online♠️kids",
+      "tag": "#2V2QV0RR2",
+      "trophies": 5267
+    },
+    {
+      "rank": 126,
+      "name": "SONIC SKIBIDII",
+      "tag": "#CYRGCYP",
+      "trophies": 5267
+    },
+    {
+      "rank": 127,
+      "name": "A⚔️K ⚡ TÜRKER ⚡",
+      "tag": "#QYLVQ00Q2",
+      "trophies": 5267
+    },
+    {
+      "rank": 128,
+      "name": "见识见识j",
+      "tag": "#GR2GUQJ8U",
+      "trophies": 5266
+    },
+    {
+      "rank": 129,
+      "name": "PIETRO",
+      "tag": "#2Q9UUG9VP",
+      "trophies": 5266
+    },
+    {
+      "rank": 130,
+      "name": "肌霸猫",
+      "tag": "#8Y8G8LPJ9",
+      "trophies": 5265
+    },
+    {
+      "rank": 131,
+      "name": "SSS⚡️Dokki ❤️",
+      "tag": "#9Y9RGGPV2",
+      "trophies": 5265
+    },
+    {
+      "rank": 132,
+      "name": "VM ARJUN",
+      "tag": "#8UPUGGGY9",
+      "trophies": 5265
+    },
+    {
+      "rank": 133,
+      "name": "春妞",
+      "tag": "#2Y0GQ0YRJ",
+      "trophies": 5265
+    },
+    {
+      "rank": 134,
+      "name": "아보카동❄️",
+      "tag": "#QRQYQ0LLL",
+      "trophies": 5264
+    },
+    {
+      "rank": 135,
+      "name": "RNG Santiago",
+      "tag": "#2VQPVRLRJ",
+      "trophies": 5264
+    },
+    {
+      "rank": 136,
+      "name": "MAD GOLO⚡️AHYW",
+      "tag": "#29VVJV8GU",
+      "trophies": 5264
+    },
+    {
+      "rank": 137,
+      "name": "⭐Ƭȑ⭐İRONCLAD",
+      "tag": "#LQQ0PQQQP",
+      "trophies": 5264
+    },
+    {
+      "rank": 138,
+      "name": "៚L.5.P៚ Leap",
+      "tag": "#8CJ28CC8",
+      "trophies": 5264
+    },
+    {
+      "rank": 139,
+      "name": "Keppinokio",
+      "tag": "#229C2L8PY",
+      "trophies": 5264
+    },
+    {
+      "rank": 140,
+      "name": "앵거스",
+      "tag": "#G98JQYYVY",
+      "trophies": 5263
+    },
+    {
+      "rank": 141,
+      "name": "Rain☔Eternal™",
+      "tag": "#UQV0VCQJ",
+      "trophies": 5262
+    },
+    {
+      "rank": 142,
+      "name": "AJ❤️Kettel",
+      "tag": "#8PPV20890",
+      "trophies": 5262
+    },
+    {
+      "rank": 143,
+      "name": "MAD ✨ＪＵＭＡＮＡシ❦₂",
+      "tag": "#8V0CUJ2QJ",
+      "trophies": 5262
+    },
+    {
+      "rank": 144,
+      "name": "sus amogus 727",
+      "tag": "#QCRJ02298",
+      "trophies": 5261
+    },
+    {
+      "rank": 145,
+      "name": "风暴之城",
+      "tag": "#QGGRRCURV",
+      "trophies": 5261
+    },
+    {
+      "rank": 146,
+      "name": "⭐️⭐️AMMAR⭐️⭐️",
+      "tag": "#Y898JPR8P",
+      "trophies": 5261
+    },
+    {
+      "rank": 147,
+      "name": "愛ՏԵɑηժ ᴮᵞ ᴹᴱ",
+      "tag": "#2LJR0Y2R9",
+      "trophies": 5260
+    },
+    {
+      "rank": 148,
+      "name": "Rm⭐leader",
+      "tag": "#PV0JLLCVV",
+      "trophies": 5260
+    },
+    {
+      "rank": 149,
+      "name": "DSM☆♦️☆HASSAN",
+      "tag": "#9VVPVUG0",
+      "trophies": 5260
+    },
+    {
+      "rank": 150,
+      "name": "꧁༺ʀv.ʟιɴн❤тíɴн༻",
+      "tag": "#92YR0RLJ8",
+      "trophies": 5260
+    },
+    {
+      "rank": 151,
+      "name": "JINUMAN",
+      "tag": "#YV9U9QPPG",
+      "trophies": 5260
+    },
+    {
+      "rank": 152,
+      "name": "viking",
+      "tag": "#2CVRRGP9",
+      "trophies": 5260
+    },
+    {
+      "rank": 153,
+      "name": "QUANG0202",
+      "tag": "#PPRYJPJV",
+      "trophies": 5259
+    },
+    {
+      "rank": 154,
+      "name": "kaung",
+      "tag": "#8CR8LJLR2",
+      "trophies": 5259
+    },
+    {
+      "rank": 155,
+      "name": "Hiraishin⚡️❤️✨",
+      "tag": "#QGQ80YRJ",
+      "trophies": 5259
+    },
+    {
+      "rank": 156,
+      "name": "Noir",
+      "tag": "#2LQV00JYC",
+      "trophies": 5259
+    },
+    {
+      "rank": 157,
+      "name": "IM KİNG RAGNAR♦",
+      "tag": "#PU28YLQPJ",
+      "trophies": 5258
+    },
+    {
+      "rank": 158,
+      "name": "Frosty✨FC",
+      "tag": "#YVRLRUJYJ",
+      "trophies": 5258
+    },
+    {
+      "rank": 159,
+      "name": "夏娜Crimson",
+      "tag": "#Q8J8GCJUJ",
+      "trophies": 5257
+    },
+    {
+      "rank": 160,
+      "name": "CB JV",
+      "tag": "#Q9088U9VL",
+      "trophies": 5257
+    },
+    {
+      "rank": 161,
+      "name": "꧁༺ɴɢʜɪêᴍĐZ༻꧂",
+      "tag": "#20V8VLJQU",
+      "trophies": 5256
+    },
+    {
+      "rank": 162,
+      "name": "⚓︎YFM⚓︎",
+      "tag": "#C2GG2CCL",
+      "trophies": 5256
+    },
+    {
+      "rank": 163,
+      "name": "sb SudiP",
+      "tag": "#PG8290CPP",
+      "trophies": 5256
+    },
+    {
+      "rank": 164,
+      "name": "Lattenschuss",
+      "tag": "#UQJLU0RL",
+      "trophies": 5256
+    },
+    {
+      "rank": 165,
+      "name": "Artemida❤️Rina",
+      "tag": "#L8QP2JL8J",
+      "trophies": 5255
+    },
+    {
+      "rank": 166,
+      "name": "JeWeL RoY @@ 1",
+      "tag": "#8YPL0R8PJ",
+      "trophies": 5255
+    },
+    {
+      "rank": 167,
+      "name": "번개",
+      "tag": "#P9928Q22Y",
+      "trophies": 5254
+    },
+    {
+      "rank": 168,
+      "name": "៚L.3.P៚ Leap",
+      "tag": "#LUGPV9PRR",
+      "trophies": 5254
+    },
+    {
+      "rank": 169,
+      "name": "Hang Tuah",
+      "tag": "#JR808892",
+      "trophies": 5254
+    },
+    {
+      "rank": 170,
+      "name": "GAKU♠️Rula",
+      "tag": "#CPLUCQ8",
+      "trophies": 5254
+    },
+    {
+      "rank": 171,
+      "name": "메롱해요",
+      "tag": "#22GYJRR8U",
+      "trophies": 5253
+    },
+    {
+      "rank": 172,
+      "name": "ⓢⓤⓟⓔⓡⓒⓡⓘⓢ :)",
+      "tag": "#9Q2QRGCR9",
+      "trophies": 5253
+    },
+    {
+      "rank": 173,
+      "name": "✨SUMIT❤️RULA✨",
+      "tag": "#89PURPJ8",
+      "trophies": 5253
+    },
+    {
+      "rank": 174,
+      "name": "Fermín Aldeguer",
+      "tag": "#22899CVR0",
+      "trophies": 5252
+    },
+    {
+      "rank": 175,
+      "name": "ESI HERCULES",
+      "tag": "#20J9P8LG",
+      "trophies": 5252
+    },
+    {
+      "rank": 176,
+      "name": "Blang",
+      "tag": "#GQR8L9YQY",
+      "trophies": 5252
+    },
+    {
+      "rank": 177,
+      "name": "dIs♦️ANAsJARNAZ",
+      "tag": "#8R2VC98Y",
+      "trophies": 5251
+    },
+    {
+      "rank": 178,
+      "name": "Lord.R7",
+      "tag": "#Y8Y089UL8",
+      "trophies": 5251
+    },
+    {
+      "rank": 179,
+      "name": "Young man....",
+      "tag": "#8CU8L088U",
+      "trophies": 5251
+    },
+    {
+      "rank": 180,
+      "name": "Ｏ ֆ Ａ Ɱ Ａ「〆」MAD",
+      "tag": "#8JRQ9CUGJ",
+      "trophies": 5251
+    },
+    {
+      "rank": 181,
+      "name": "Mr.Khan❤️J!llca",
+      "tag": "#VCLYL8LV",
+      "trophies": 5251
+    },
+    {
+      "rank": 182,
+      "name": "ATC♣️MR ๛ BASIL",
+      "tag": "#9GYCGJUQP",
+      "trophies": 5251
+    },
+    {
+      "rank": 183,
+      "name": "MidNight ⚡️ LK",
+      "tag": "#PRQLYLRY0",
+      "trophies": 5250
+    },
+    {
+      "rank": 184,
+      "name": "R a f f a",
+      "tag": "#UL8JLR2G",
+      "trophies": 5250
+    },
+    {
+      "rank": 185,
+      "name": "ᵀᵀᴺ BEAGLE♦️DOG",
+      "tag": "#LY982QPV",
+      "trophies": 5250
+    },
+    {
+      "rank": 186,
+      "name": "JAHIDUL",
+      "tag": "#802R2Y2RL",
+      "trophies": 5250
+    },
+    {
+      "rank": 187,
+      "name": "Mugiwara",
+      "tag": "#Q9L2QJQLQ",
+      "trophies": 5250
+    },
+    {
+      "rank": 188,
+      "name": "坤天帝",
+      "tag": "#YV8YCQ8JC",
+      "trophies": 5249
+    },
+    {
+      "rank": 189,
+      "name": "Ãʟɪᴇɴ - x 么",
+      "tag": "#L20J02PY2",
+      "trophies": 5249
+    },
+    {
+      "rank": 190,
+      "name": "Shifu Joep!",
+      "tag": "#22Q9RYPPP",
+      "trophies": 5249
+    },
+    {
+      "rank": 191,
+      "name": "♪侯賽因⚜ＨＡＫ．ＩＱ",
+      "tag": "#2LYUVLLUU",
+      "trophies": 5249
+    },
+    {
+      "rank": 192,
+      "name": "CE Name",
+      "tag": "#9LJ8UGC9L",
+      "trophies": 5249
+    },
+    {
+      "rank": 193,
+      "name": "GAKU♦️Rula",
+      "tag": "#9U9V80U2",
+      "trophies": 5249
+    },
+    {
+      "rank": 194,
+      "name": "ジコったー",
+      "tag": "#L8LYRYV0L",
+      "trophies": 5248
+    },
+    {
+      "rank": 195,
+      "name": "McAngel天使❄️",
+      "tag": "#9CQQ9JPPG",
+      "trophies": 5248
+    },
+    {
+      "rank": 196,
+      "name": "➰TuanTran➰",
+      "tag": "#G9CLPP9YV",
+      "trophies": 5248
+    },
+    {
+      "rank": 197,
+      "name": "Vô Tình♠️MAD",
+      "tag": "#P8J02YR2P",
+      "trophies": 5248
+    },
+    {
+      "rank": 198,
+      "name": "Thành Biên Hoà",
+      "tag": "#2JLGYJ0L",
+      "trophies": 5248
+    },
+    {
       "rank": 199,
-      "name": "Ling Ling",
-      "tag": "#9J09R9LYL",
-      "trophies": 5288
+      "name": "『ＩＱ』ＫＮＩＧＨＴ™️",
+      "tag": "#YVCRCPLU",
+      "trophies": 5248
     },
     {
       "rank": 200,
-      "name": "CB JV",
-      "tag": "#Q9088U9VL",
-      "trophies": 5287
+      "name": "soon",
+      "tag": "#QCGLVP8U",
+      "trophies": 5247
     }
   ],
   "reset_top200": [
     {
       "rank": 1,
-      "trophies": 5452
+      "trophies": 5450
     },
     {
       "rank": 2,
-      "trophies": 5404
+      "trophies": 5448
     },
     {
       "rank": 3,
-      "trophies": 5398
+      "trophies": 5430
     },
     {
       "rank": 4,
-      "trophies": 5396
-    },
-    {
-      "rank": 5,
-      "trophies": 5390
-    },
-    {
-      "rank": 6,
-      "trophies": 5379
-    },
-    {
-      "rank": 7,
-      "trophies": 5375
-    },
-    {
-      "rank": 8,
-      "trophies": 5366
-    },
-    {
-      "rank": 9,
-      "trophies": 5364
-    },
-    {
-      "rank": 10,
-      "trophies": 5360
-    },
-    {
-      "rank": 11,
-      "trophies": 5360
-    },
-    {
-      "rank": 12,
-      "trophies": 5359
-    },
-    {
-      "rank": 13,
-      "trophies": 5357
-    },
-    {
-      "rank": 14,
-      "trophies": 5355
-    },
-    {
-      "rank": 15,
-      "trophies": 5354
-    },
-    {
-      "rank": 16,
-      "trophies": 5354
-    },
-    {
-      "rank": 17,
-      "trophies": 5353
-    },
-    {
-      "rank": 18,
-      "trophies": 5353
-    },
-    {
-      "rank": 19,
-      "trophies": 5351
-    },
-    {
-      "rank": 20,
-      "trophies": 5349
-    },
-    {
-      "rank": 21,
-      "trophies": 5347
-    },
-    {
-      "rank": 22,
-      "trophies": 5345
-    },
-    {
-      "rank": 23,
-      "trophies": 5345
-    },
-    {
-      "rank": 24,
-      "trophies": 5344
-    },
-    {
-      "rank": 25,
-      "trophies": 5342
-    },
-    {
-      "rank": 26,
-      "trophies": 5341
-    },
-    {
-      "rank": 27,
-      "trophies": 5337
-    },
-    {
-      "rank": 28,
-      "trophies": 5333
-    },
-    {
-      "rank": 29,
-      "trophies": 5331
-    },
-    {
-      "rank": 30,
-      "trophies": 5330
-    },
-    {
-      "rank": 31,
-      "trophies": 5328
-    },
-    {
-      "rank": 32,
-      "trophies": 5327
-    },
-    {
-      "rank": 33,
-      "trophies": 5326
-    },
-    {
-      "rank": 34,
-      "trophies": 5322
-    },
-    {
-      "rank": 35,
-      "trophies": 5322
-    },
-    {
-      "rank": 36,
-      "trophies": 5312
-    },
-    {
-      "rank": 37,
-      "trophies": 5312
-    },
-    {
-      "rank": 38,
-      "trophies": 5308
-    },
-    {
-      "rank": 39,
-      "trophies": 5308
-    },
-    {
-      "rank": 40,
-      "trophies": 5307
-    },
-    {
-      "rank": 41,
-      "trophies": 5307
-    },
-    {
-      "rank": 42,
-      "trophies": 5305
-    },
-    {
-      "rank": 43,
-      "trophies": 5305
-    },
-    {
-      "rank": 44,
-      "trophies": 5304
-    },
-    {
-      "rank": 45,
-      "trophies": 5302
-    },
-    {
-      "rank": 46,
-      "trophies": 5302
-    },
-    {
-      "rank": 47,
-      "trophies": 5300
-    },
-    {
-      "rank": 48,
-      "trophies": 5298
-    },
-    {
-      "rank": 49,
-      "trophies": 5297
-    },
-    {
-      "rank": 50,
-      "trophies": 5295
-    },
-    {
-      "rank": 51,
-      "trophies": 5294
-    },
-    {
-      "rank": 52,
-      "trophies": 5294
-    },
-    {
-      "rank": 53,
-      "trophies": 5290
-    },
-    {
-      "rank": 54,
-      "trophies": 5288
-    },
-    {
-      "rank": 55,
-      "trophies": 5286
-    },
-    {
-      "rank": 56,
-      "trophies": 5285
-    },
-    {
-      "rank": 57,
-      "trophies": 5285
-    },
-    {
-      "rank": 58,
-      "trophies": 5283
-    },
-    {
-      "rank": 59,
-      "trophies": 5278
-    },
-    {
-      "rank": 60,
-      "trophies": 5277
-    },
-    {
-      "rank": 61,
-      "trophies": 5277
-    },
-    {
-      "rank": 62,
-      "trophies": 5277
-    },
-    {
-      "rank": 63,
-      "trophies": 5276
-    },
-    {
-      "rank": 64,
-      "trophies": 5276
-    },
-    {
-      "rank": 65,
-      "trophies": 5275
-    },
-    {
-      "rank": 66,
-      "trophies": 5273
-    },
-    {
-      "rank": 67,
-      "trophies": 5273
-    },
-    {
-      "rank": 68,
-      "trophies": 5273
-    },
-    {
-      "rank": 69,
-      "trophies": 5272
-    },
-    {
-      "rank": 70,
-      "trophies": 5272
-    },
-    {
-      "rank": 71,
-      "trophies": 5271
-    },
-    {
-      "rank": 72,
-      "trophies": 5271
-    },
-    {
-      "rank": 73,
-      "trophies": 5270
-    },
-    {
-      "rank": 74,
-      "trophies": 5270
-    },
-    {
-      "rank": 75,
-      "trophies": 5270
-    },
-    {
-      "rank": 76,
-      "trophies": 5269
-    },
-    {
-      "rank": 77,
-      "trophies": 5269
-    },
-    {
-      "rank": 78,
-      "trophies": 5268
-    },
-    {
-      "rank": 79,
-      "trophies": 5268
-    },
-    {
-      "rank": 80,
-      "trophies": 5267
-    },
-    {
-      "rank": 81,
-      "trophies": 5267
-    },
-    {
-      "rank": 82,
-      "trophies": 5267
-    },
-    {
-      "rank": 83,
-      "trophies": 5266
-    },
-    {
-      "rank": 84,
-      "trophies": 5265
-    },
-    {
-      "rank": 85,
-      "trophies": 5264
-    },
-    {
-      "rank": 86,
-      "trophies": 5264
-    },
-    {
-      "rank": 87,
-      "trophies": 5264
-    },
-    {
-      "rank": 88,
-      "trophies": 5264
-    },
-    {
-      "rank": 89,
-      "trophies": 5263
-    },
-    {
-      "rank": 90,
-      "trophies": 5262
-    },
-    {
-      "rank": 91,
-      "trophies": 5262
-    },
-    {
-      "rank": 92,
-      "trophies": 5262
-    },
-    {
-      "rank": 93,
-      "trophies": 5261
-    },
-    {
-      "rank": 94,
-      "trophies": 5261
-    },
-    {
-      "rank": 95,
-      "trophies": 5261
-    },
-    {
-      "rank": 96,
-      "trophies": 5261
-    },
-    {
-      "rank": 97,
-      "trophies": 5261
-    },
-    {
-      "rank": 98,
-      "trophies": 5260
-    },
-    {
-      "rank": 99,
-      "trophies": 5260
-    },
-    {
-      "rank": 100,
-      "trophies": 5260
-    },
-    {
-      "rank": 101,
-      "trophies": 5259
-    },
-    {
-      "rank": 102,
-      "trophies": 5259
-    },
-    {
-      "rank": 103,
-      "trophies": 5259
-    },
-    {
-      "rank": 104,
-      "trophies": 5258
-    },
-    {
-      "rank": 105,
-      "trophies": 5258
-    },
-    {
-      "rank": 106,
-      "trophies": 5258
-    },
-    {
-      "rank": 107,
-      "trophies": 5258
-    },
-    {
-      "rank": 108,
-      "trophies": 5258
-    },
-    {
-      "rank": 109,
-      "trophies": 5257
-    },
-    {
-      "rank": 110,
-      "trophies": 5257
-    },
-    {
-      "rank": 111,
-      "trophies": 5257
-    },
-    {
-      "rank": 112,
-      "trophies": 5257
-    },
-    {
-      "rank": 113,
-      "trophies": 5256
-    },
-    {
-      "rank": 114,
-      "trophies": 5256
-    },
-    {
-      "rank": 115,
-      "trophies": 5255
-    },
-    {
-      "rank": 116,
-      "trophies": 5255
-    },
-    {
-      "rank": 117,
-      "trophies": 5255
-    },
-    {
-      "rank": 118,
-      "trophies": 5255
-    },
-    {
-      "rank": 119,
-      "trophies": 5255
-    },
-    {
-      "rank": 120,
-      "trophies": 5254
-    },
-    {
-      "rank": 121,
-      "trophies": 5254
-    },
-    {
-      "rank": 122,
-      "trophies": 5254
-    },
-    {
-      "rank": 123,
-      "trophies": 5254
-    },
-    {
-      "rank": 124,
-      "trophies": 5254
-    },
-    {
-      "rank": 125,
-      "trophies": 5252
-    },
-    {
-      "rank": 126,
-      "trophies": 5252
-    },
-    {
-      "rank": 127,
-      "trophies": 5251
-    },
-    {
-      "rank": 128,
-      "trophies": 5250
-    },
-    {
-      "rank": 129,
-      "trophies": 5250
-    },
-    {
-      "rank": 130,
-      "trophies": 5250
-    },
-    {
-      "rank": 131,
-      "trophies": 5250
-    },
-    {
-      "rank": 132,
-      "trophies": 5249
-    },
-    {
-      "rank": 133,
-      "trophies": 5249
-    },
-    {
-      "rank": 134,
-      "trophies": 5249
-    },
-    {
-      "rank": 135,
-      "trophies": 5249
-    },
-    {
-      "rank": 136,
-      "trophies": 5248
-    },
-    {
-      "rank": 137,
-      "trophies": 5248
-    },
-    {
-      "rank": 138,
-      "trophies": 5248
-    },
-    {
-      "rank": 139,
-      "trophies": 5248
-    },
-    {
-      "rank": 140,
-      "trophies": 5248
-    },
-    {
-      "rank": 141,
-      "trophies": 5247
-    },
-    {
-      "rank": 142,
-      "trophies": 5247
-    },
-    {
-      "rank": 143,
-      "trophies": 5247
-    },
-    {
-      "rank": 144,
-      "trophies": 5246
-    },
-    {
-      "rank": 145,
-      "trophies": 5246
-    },
-    {
-      "rank": 146,
-      "trophies": 5245
-    },
-    {
-      "rank": 147,
-      "trophies": 5245
-    },
-    {
-      "rank": 148,
-      "trophies": 5245
-    },
-    {
-      "rank": 149,
-      "trophies": 5244
-    },
-    {
-      "rank": 150,
-      "trophies": 5244
-    },
-    {
-      "rank": 151,
-      "trophies": 5244
-    },
-    {
-      "rank": 152,
-      "trophies": 5244
-    },
-    {
-      "rank": 153,
-      "trophies": 5244
-    },
-    {
-      "rank": 154,
-      "trophies": 5244
-    },
-    {
-      "rank": 155,
-      "trophies": 5244
-    },
-    {
-      "rank": 156,
-      "trophies": 5243
-    },
-    {
-      "rank": 157,
-      "trophies": 5243
-    },
-    {
-      "rank": 158,
-      "trophies": 5243
-    },
-    {
-      "rank": 159,
-      "trophies": 5243
-    },
-    {
-      "rank": 160,
-      "trophies": 5243
-    },
-    {
-      "rank": 161,
-      "trophies": 5242
-    },
-    {
-      "rank": 162,
-      "trophies": 5241
-    },
-    {
-      "rank": 163,
-      "trophies": 5241
-    },
-    {
-      "rank": 164,
-      "trophies": 5241
-    },
-    {
-      "rank": 165,
-      "trophies": 5240
-    },
-    {
-      "rank": 166,
-      "trophies": 5240
-    },
-    {
-      "rank": 167,
-      "trophies": 5240
-    },
-    {
-      "rank": 168,
-      "trophies": 5240
-    },
-    {
-      "rank": 169,
-      "trophies": 5239
-    },
-    {
-      "rank": 170,
-      "trophies": 5239
-    },
-    {
-      "rank": 171,
-      "trophies": 5239
-    },
-    {
-      "rank": 172,
-      "trophies": 5239
-    },
-    {
-      "rank": 173,
-      "trophies": 5239
-    },
-    {
-      "rank": 174,
-      "trophies": 5239
-    },
-    {
-      "rank": 175,
-      "trophies": 5239
-    },
-    {
-      "rank": 176,
-      "trophies": 5238
-    },
-    {
-      "rank": 177,
-      "trophies": 5238
-    },
-    {
-      "rank": 178,
-      "trophies": 5238
-    },
-    {
-      "rank": 179,
-      "trophies": 5238
-    },
-    {
-      "rank": 180,
-      "trophies": 5237
-    },
-    {
-      "rank": 181,
-      "trophies": 5237
-    },
-    {
-      "rank": 182,
-      "trophies": 5237
-    },
-    {
-      "rank": 183,
-      "trophies": 5237
-    },
-    {
-      "rank": 184,
-      "trophies": 5236
-    },
-    {
-      "rank": 185,
-      "trophies": 5236
-    },
-    {
-      "rank": 186,
-      "trophies": 5236
-    },
-    {
-      "rank": 187,
-      "trophies": 5236
-    },
-    {
-      "rank": 188,
-      "trophies": 5235
-    },
-    {
-      "rank": 189,
-      "trophies": 5235
-    },
-    {
-      "rank": 190,
-      "trophies": 5235
-    },
-    {
-      "rank": 191,
-      "trophies": 5235
-    },
-    {
-      "rank": 192,
-      "trophies": 5235
-    },
-    {
-      "rank": 193,
-      "trophies": 5235
-    },
-    {
-      "rank": 194,
-      "trophies": 5234
-    },
-    {
-      "rank": 195,
-      "trophies": 5234
-    },
-    {
-      "rank": 196,
-      "trophies": 5234
-    },
-    {
-      "rank": 197,
-      "trophies": 5233
-    },
-    {
-      "rank": 198,
-      "trophies": 5233
-    },
-    {
-      "rank": 199,
-      "trophies": 5233
-    },
-    {
-      "rank": 200,
-      "trophies": 5233
-    }
-  ],
-  "pred_top200": [
-    {
-      "rank": 1,
-      "trophies": 5474
-    },
-    {
-      "rank": 2,
-      "trophies": 5427
-    },
-    {
-      "rank": 3,
-      "trophies": 5426
-    },
-    {
-      "rank": 4,
-      "trophies": 5425
+      "trophies": 5424
     },
     {
       "rank": 5,
@@ -2191,219 +1389,219 @@
     },
     {
       "rank": 6,
-      "trophies": 5408
+      "trophies": 5411
     },
     {
       "rank": 7,
-      "trophies": 5402
+      "trophies": 5399
     },
     {
       "rank": 8,
-      "trophies": 5390
+      "trophies": 5397
     },
     {
       "rank": 9,
-      "trophies": 5387
+      "trophies": 5390
     },
     {
       "rank": 10,
-      "trophies": 5383
+      "trophies": 5386
     },
     {
       "rank": 11,
-      "trophies": 5389
+      "trophies": 5383
     },
     {
       "rank": 12,
-      "trophies": 5389
+      "trophies": 5383
     },
     {
       "rank": 13,
-      "trophies": 5387
+      "trophies": 5380
     },
     {
       "rank": 14,
-      "trophies": 5382
+      "trophies": 5380
     },
     {
       "rank": 15,
-      "trophies": 5379
+      "trophies": 5376
     },
     {
       "rank": 16,
-      "trophies": 5381
-    },
-    {
-      "rank": 17,
-      "trophies": 5377
-    },
-    {
-      "rank": 18,
-      "trophies": 5378
-    },
-    {
-      "rank": 19,
-      "trophies": 5375
-    },
-    {
-      "rank": 20,
-      "trophies": 5374
-    },
-    {
-      "rank": 21,
       "trophies": 5373
     },
     {
-      "rank": 22,
-      "trophies": 5369
+      "rank": 17,
+      "trophies": 5368
     },
     {
-      "rank": 23,
-      "trophies": 5369
-    },
-    {
-      "rank": 24,
+      "rank": 18,
       "trophies": 5366
     },
     {
-      "rank": 25,
+      "rank": 19,
       "trophies": 5365
     },
     {
+      "rank": 20,
+      "trophies": 5362
+    },
+    {
+      "rank": 21,
+      "trophies": 5362
+    },
+    {
+      "rank": 22,
+      "trophies": 5357
+    },
+    {
+      "rank": 23,
+      "trophies": 5354
+    },
+    {
+      "rank": 24,
+      "trophies": 5348
+    },
+    {
+      "rank": 25,
+      "trophies": 5344
+    },
+    {
       "rank": 26,
-      "trophies": 5363
+      "trophies": 5341
     },
     {
       "rank": 27,
-      "trophies": 5358
+      "trophies": 5340
     },
     {
       "rank": 28,
-      "trophies": 5359
+      "trophies": 5340
     },
     {
       "rank": 29,
-      "trophies": 5356
-    },
-    {
-      "rank": 30,
-      "trophies": 5356
-    },
-    {
-      "rank": 31,
-      "trophies": 5353
-    },
-    {
-      "rank": 32,
-      "trophies": 5350
-    },
-    {
-      "rank": 33,
-      "trophies": 5349
-    },
-    {
-      "rank": 34,
-      "trophies": 5346
-    },
-    {
-      "rank": 35,
-      "trophies": 5347
-    },
-    {
-      "rank": 36,
       "trophies": 5338
     },
     {
-      "rank": 37,
+      "rank": 30,
+      "trophies": 5338
+    },
+    {
+      "rank": 31,
       "trophies": 5337
     },
     {
-      "rank": 38,
-      "trophies": 5333
+      "rank": 32,
+      "trophies": 5336
     },
     {
-      "rank": 39,
+      "rank": 33,
+      "trophies": 5332
+    },
+    {
+      "rank": 34,
       "trophies": 5331
     },
     {
-      "rank": 40,
-      "trophies": 5330
+      "rank": 35,
+      "trophies": 5331
     },
     {
-      "rank": 41,
-      "trophies": 5330
+      "rank": 36,
+      "trophies": 5329
     },
     {
-      "rank": 42,
-      "trophies": 5326
+      "rank": 37,
+      "trophies": 5329
     },
     {
-      "rank": 43,
-      "trophies": 5324
+      "rank": 38,
+      "trophies": 5329
     },
     {
-      "rank": 44,
+      "rank": 39,
       "trophies": 5322
     },
     {
-      "rank": 45,
+      "rank": 40,
       "trophies": 5320
+    },
+    {
+      "rank": 41,
+      "trophies": 5317
+    },
+    {
+      "rank": 42,
+      "trophies": 5316
+    },
+    {
+      "rank": 43,
+      "trophies": 5315
+    },
+    {
+      "rank": 44,
+      "trophies": 5315
+    },
+    {
+      "rank": 45,
+      "trophies": 5314
     },
     {
       "rank": 46,
-      "trophies": 5320
-    },
-    {
-      "rank": 47,
-      "trophies": 5319
-    },
-    {
-      "rank": 48,
-      "trophies": 5317
-    },
-    {
-      "rank": 49,
-      "trophies": 5318
-    },
-    {
-      "rank": 50,
-      "trophies": 5317
-    },
-    {
-      "rank": 51,
-      "trophies": 5315
-    },
-    {
-      "rank": 52,
-      "trophies": 5315
-    },
-    {
-      "rank": 53,
       "trophies": 5313
     },
     {
-      "rank": 54,
+      "rank": 47,
+      "trophies": 5311
+    },
+    {
+      "rank": 48,
       "trophies": 5310
     },
     {
-      "rank": 55,
+      "rank": 49,
+      "trophies": 5310
+    },
+    {
+      "rank": 50,
+      "trophies": 5309
+    },
+    {
+      "rank": 51,
+      "trophies": 5309
+    },
+    {
+      "rank": 52,
+      "trophies": 5307
+    },
+    {
+      "rank": 53,
       "trophies": 5306
     },
     {
-      "rank": 56,
-      "trophies": 5306
-    },
-    {
-      "rank": 57,
-      "trophies": 5306
-    },
-    {
-      "rank": 58,
+      "rank": 54,
       "trophies": 5304
     },
     {
-      "rank": 59,
+      "rank": 55,
+      "trophies": 5303
+    },
+    {
+      "rank": 56,
+      "trophies": 5301
+    },
+    {
+      "rank": 57,
       "trophies": 5300
+    },
+    {
+      "rank": 58,
+      "trophies": 5300
+    },
+    {
+      "rank": 59,
+      "trophies": 5298
     },
     {
       "rank": 60,
@@ -2415,7 +1613,7 @@
     },
     {
       "rank": 62,
-      "trophies": 5297
+      "trophies": 5296
     },
     {
       "rank": 63,
@@ -2427,243 +1625,243 @@
     },
     {
       "rank": 65,
-      "trophies": 5294
+      "trophies": 5292
     },
     {
       "rank": 66,
-      "trophies": 5293
+      "trophies": 5290
     },
     {
       "rank": 67,
-      "trophies": 5292
+      "trophies": 5290
     },
     {
       "rank": 68,
-      "trophies": 5292
-    },
-    {
-      "rank": 69,
-      "trophies": 5290
-    },
-    {
-      "rank": 70,
-      "trophies": 5291
-    },
-    {
-      "rank": 71,
-      "trophies": 5291
-    },
-    {
-      "rank": 72,
-      "trophies": 5292
-    },
-    {
-      "rank": 73,
-      "trophies": 5290
-    },
-    {
-      "rank": 74,
-      "trophies": 5291
-    },
-    {
-      "rank": 75,
       "trophies": 5289
     },
     {
-      "rank": 76,
+      "rank": 69,
+      "trophies": 5289
+    },
+    {
+      "rank": 70,
+      "trophies": 5289
+    },
+    {
+      "rank": 71,
+      "trophies": 5288
+    },
+    {
+      "rank": 72,
+      "trophies": 5288
+    },
+    {
+      "rank": 73,
+      "trophies": 5288
+    },
+    {
+      "rank": 74,
       "trophies": 5287
+    },
+    {
+      "rank": 75,
+      "trophies": 5286
+    },
+    {
+      "rank": 76,
+      "trophies": 5284
     },
     {
       "rank": 77,
-      "trophies": 5287
+      "trophies": 5283
     },
     {
       "rank": 78,
-      "trophies": 5286
+      "trophies": 5283
     },
     {
       "rank": 79,
-      "trophies": 5285
+      "trophies": 5283
     },
     {
       "rank": 80,
-      "trophies": 5286
+      "trophies": 5282
     },
     {
       "rank": 81,
-      "trophies": 5287
+      "trophies": 5282
     },
     {
       "rank": 82,
-      "trophies": 5286
+      "trophies": 5282
     },
     {
       "rank": 83,
-      "trophies": 5285
+      "trophies": 5282
     },
     {
       "rank": 84,
-      "trophies": 5285
+      "trophies": 5282
     },
     {
       "rank": 85,
-      "trophies": 5283
+      "trophies": 5282
     },
     {
       "rank": 86,
-      "trophies": 5283
+      "trophies": 5281
     },
     {
       "rank": 87,
-      "trophies": 5282
-    },
-    {
-      "rank": 88,
-      "trophies": 5283
-    },
-    {
-      "rank": 89,
-      "trophies": 5282
-    },
-    {
-      "rank": 90,
       "trophies": 5280
     },
     {
-      "rank": 91,
+      "rank": 88,
+      "trophies": 5280
+    },
+    {
+      "rank": 89,
       "trophies": 5279
     },
     {
-      "rank": 92,
-      "trophies": 5279
-    },
-    {
-      "rank": 93,
-      "trophies": 5277
-    },
-    {
-      "rank": 94,
+      "rank": 90,
       "trophies": 5278
     },
     {
-      "rank": 95,
-      "trophies": 5279
+      "rank": 91,
+      "trophies": 5278
     },
     {
-      "rank": 96,
-      "trophies": 5279
-    },
-    {
-      "rank": 97,
-      "trophies": 5279
-    },
-    {
-      "rank": 98,
+      "rank": 92,
       "trophies": 5277
     },
     {
-      "rank": 99,
+      "rank": 93,
       "trophies": 5276
+    },
+    {
+      "rank": 94,
+      "trophies": 5276
+    },
+    {
+      "rank": 95,
+      "trophies": 5276
+    },
+    {
+      "rank": 96,
+      "trophies": 5276
+    },
+    {
+      "rank": 97,
+      "trophies": 5275
+    },
+    {
+      "rank": 98,
+      "trophies": 5275
+    },
+    {
+      "rank": 99,
+      "trophies": 5275
     },
     {
       "rank": 100,
-      "trophies": 5276
+      "trophies": 5274
     },
     {
       "rank": 101,
-      "trophies": 5276
+      "trophies": 5273
     },
     {
       "rank": 102,
-      "trophies": 5275
+      "trophies": 5272
     },
     {
       "rank": 103,
-      "trophies": 5275
+      "trophies": 5272
     },
     {
       "rank": 104,
-      "trophies": 5275
+      "trophies": 5272
     },
     {
       "rank": 105,
-      "trophies": 5275
+      "trophies": 5272
     },
     {
       "rank": 106,
-      "trophies": 5275
+      "trophies": 5271
     },
     {
       "rank": 107,
-      "trophies": 5275
+      "trophies": 5271
     },
     {
       "rank": 108,
-      "trophies": 5275
+      "trophies": 5271
     },
     {
       "rank": 109,
-      "trophies": 5274
+      "trophies": 5271
     },
     {
       "rank": 110,
-      "trophies": 5274
+      "trophies": 5271
     },
     {
       "rank": 111,
-      "trophies": 5274
+      "trophies": 5270
     },
     {
       "rank": 112,
-      "trophies": 5275
+      "trophies": 5270
     },
     {
       "rank": 113,
-      "trophies": 5274
+      "trophies": 5270
     },
     {
       "rank": 114,
-      "trophies": 5274
+      "trophies": 5269
     },
     {
       "rank": 115,
-      "trophies": 5271
+      "trophies": 5269
     },
     {
       "rank": 116,
-      "trophies": 5271
+      "trophies": 5268
     },
     {
       "rank": 117,
-      "trophies": 5271
+      "trophies": 5268
     },
     {
       "rank": 118,
-      "trophies": 5271
+      "trophies": 5268
     },
     {
       "rank": 119,
-      "trophies": 5271
+      "trophies": 5268
     },
     {
       "rank": 120,
-      "trophies": 5269
+      "trophies": 5268
     },
     {
       "rank": 121,
-      "trophies": 5269
+      "trophies": 5268
     },
     {
       "rank": 122,
-      "trophies": 5270
+      "trophies": 5267
     },
     {
       "rank": 123,
-      "trophies": 5270
+      "trophies": 5267
     },
     {
       "rank": 124,
-      "trophies": 5270
+      "trophies": 5267
     },
     {
       "rank": 125,
@@ -2675,11 +1873,11 @@
     },
     {
       "rank": 127,
-      "trophies": 5266
+      "trophies": 5267
     },
     {
       "rank": 128,
-      "trophies": 5265
+      "trophies": 5266
     },
     {
       "rank": 129,
@@ -2687,11 +1885,11 @@
     },
     {
       "rank": 130,
-      "trophies": 5266
+      "trophies": 5265
     },
     {
       "rank": 131,
-      "trophies": 5267
+      "trophies": 5265
     },
     {
       "rank": 132,
@@ -2699,15 +1897,15 @@
     },
     {
       "rank": 133,
-      "trophies": 5266
+      "trophies": 5265
     },
     {
       "rank": 134,
-      "trophies": 5265
+      "trophies": 5264
     },
     {
       "rank": 135,
-      "trophies": 5265
+      "trophies": 5264
     },
     {
       "rank": 136,
@@ -2723,31 +1921,31 @@
     },
     {
       "rank": 139,
-      "trophies": 5265
+      "trophies": 5264
     },
     {
       "rank": 140,
-      "trophies": 5264
+      "trophies": 5263
     },
     {
       "rank": 141,
-      "trophies": 5263
+      "trophies": 5262
     },
     {
       "rank": 142,
-      "trophies": 5263
+      "trophies": 5262
     },
     {
       "rank": 143,
-      "trophies": 5264
+      "trophies": 5262
     },
     {
       "rank": 144,
-      "trophies": 5263
+      "trophies": 5261
     },
     {
       "rank": 145,
-      "trophies": 5263
+      "trophies": 5261
     },
     {
       "rank": 146,
@@ -2755,39 +1953,39 @@
     },
     {
       "rank": 147,
-      "trophies": 5262
+      "trophies": 5260
     },
     {
       "rank": 148,
-      "trophies": 5262
+      "trophies": 5260
     },
     {
       "rank": 149,
-      "trophies": 5261
+      "trophies": 5260
     },
     {
       "rank": 150,
-      "trophies": 5261
+      "trophies": 5260
     },
     {
       "rank": 151,
-      "trophies": 5261
+      "trophies": 5260
     },
     {
       "rank": 152,
-      "trophies": 5261
+      "trophies": 5260
     },
     {
       "rank": 153,
-      "trophies": 5261
+      "trophies": 5259
     },
     {
       "rank": 154,
-      "trophies": 5261
+      "trophies": 5259
     },
     {
       "rank": 155,
-      "trophies": 5261
+      "trophies": 5259
     },
     {
       "rank": 156,
@@ -2795,31 +1993,31 @@
     },
     {
       "rank": 157,
-      "trophies": 5260
+      "trophies": 5258
     },
     {
       "rank": 158,
-      "trophies": 5259
+      "trophies": 5258
     },
     {
       "rank": 159,
-      "trophies": 5259
+      "trophies": 5257
     },
     {
       "rank": 160,
-      "trophies": 5260
+      "trophies": 5257
     },
     {
       "rank": 161,
-      "trophies": 5259
+      "trophies": 5256
     },
     {
       "rank": 162,
-      "trophies": 5257
+      "trophies": 5256
     },
     {
       "rank": 163,
-      "trophies": 5257
+      "trophies": 5256
     },
     {
       "rank": 164,
@@ -2835,11 +2033,11 @@
     },
     {
       "rank": 167,
-      "trophies": 5255
+      "trophies": 5254
     },
     {
       "rank": 168,
-      "trophies": 5255
+      "trophies": 5254
     },
     {
       "rank": 169,
@@ -2851,7 +2049,7 @@
     },
     {
       "rank": 171,
-      "trophies": 5254
+      "trophies": 5253
     },
     {
       "rank": 172,
@@ -2863,35 +2061,35 @@
     },
     {
       "rank": 174,
-      "trophies": 5253
+      "trophies": 5252
     },
     {
       "rank": 175,
-      "trophies": 5254
+      "trophies": 5252
     },
     {
       "rank": 176,
-      "trophies": 5253
+      "trophies": 5252
     },
     {
       "rank": 177,
-      "trophies": 5252
+      "trophies": 5251
     },
     {
       "rank": 178,
-      "trophies": 5252
+      "trophies": 5251
     },
     {
       "rank": 179,
-      "trophies": 5253
+      "trophies": 5251
     },
     {
       "rank": 180,
-      "trophies": 5252
+      "trophies": 5251
     },
     {
       "rank": 181,
-      "trophies": 5252
+      "trophies": 5251
     },
     {
       "rank": 182,
@@ -2899,7 +2097,7 @@
     },
     {
       "rank": 183,
-      "trophies": 5251
+      "trophies": 5250
     },
     {
       "rank": 184,
@@ -2907,7 +2105,7 @@
     },
     {
       "rank": 185,
-      "trophies": 5251
+      "trophies": 5250
     },
     {
       "rank": 186,
@@ -2955,19 +2153,821 @@
     },
     {
       "rank": 197,
-      "trophies": 5246
+      "trophies": 5248
     },
     {
       "rank": 198,
-      "trophies": 5246
+      "trophies": 5248
     },
     {
       "rank": 199,
-      "trophies": 5246
+      "trophies": 5248
     },
     {
       "rank": 200,
-      "trophies": 5246
+      "trophies": 5247
+    }
+  ],
+  "pred_top200": [
+    {
+      "rank": 1,
+      "trophies": 5472
+    },
+    {
+      "rank": 2,
+      "trophies": 5471
+    },
+    {
+      "rank": 3,
+      "trophies": 5458
+    },
+    {
+      "rank": 4,
+      "trophies": 5452
+    },
+    {
+      "rank": 5,
+      "trophies": 5446
+    },
+    {
+      "rank": 6,
+      "trophies": 5440
+    },
+    {
+      "rank": 7,
+      "trophies": 5423
+    },
+    {
+      "rank": 8,
+      "trophies": 5421
+    },
+    {
+      "rank": 9,
+      "trophies": 5413
+    },
+    {
+      "rank": 10,
+      "trophies": 5409
+    },
+    {
+      "rank": 11,
+      "trophies": 5406
+    },
+    {
+      "rank": 12,
+      "trophies": 5407
+    },
+    {
+      "rank": 13,
+      "trophies": 5403
+    },
+    {
+      "rank": 14,
+      "trophies": 5405
+    },
+    {
+      "rank": 15,
+      "trophies": 5400
+    },
+    {
+      "rank": 16,
+      "trophies": 5398
+    },
+    {
+      "rank": 17,
+      "trophies": 5391
+    },
+    {
+      "rank": 18,
+      "trophies": 5390
+    },
+    {
+      "rank": 19,
+      "trophies": 5389
+    },
+    {
+      "rank": 20,
+      "trophies": 5380
+    },
+    {
+      "rank": 21,
+      "trophies": 5379
+    },
+    {
+      "rank": 22,
+      "trophies": 5374
+    },
+    {
+      "rank": 23,
+      "trophies": 5371
+    },
+    {
+      "rank": 24,
+      "trophies": 5367
+    },
+    {
+      "rank": 25,
+      "trophies": 5363
+    },
+    {
+      "rank": 26,
+      "trophies": 5360
+    },
+    {
+      "rank": 27,
+      "trophies": 5358
+    },
+    {
+      "rank": 28,
+      "trophies": 5358
+    },
+    {
+      "rank": 29,
+      "trophies": 5355
+    },
+    {
+      "rank": 30,
+      "trophies": 5355
+    },
+    {
+      "rank": 31,
+      "trophies": 5355
+    },
+    {
+      "rank": 32,
+      "trophies": 5354
+    },
+    {
+      "rank": 33,
+      "trophies": 5350
+    },
+    {
+      "rank": 34,
+      "trophies": 5346
+    },
+    {
+      "rank": 35,
+      "trophies": 5345
+    },
+    {
+      "rank": 36,
+      "trophies": 5346
+    },
+    {
+      "rank": 37,
+      "trophies": 5346
+    },
+    {
+      "rank": 38,
+      "trophies": 5350
+    },
+    {
+      "rank": 39,
+      "trophies": 5337
+    },
+    {
+      "rank": 40,
+      "trophies": 5336
+    },
+    {
+      "rank": 41,
+      "trophies": 5332
+    },
+    {
+      "rank": 42,
+      "trophies": 5333
+    },
+    {
+      "rank": 43,
+      "trophies": 5332
+    },
+    {
+      "rank": 44,
+      "trophies": 5333
+    },
+    {
+      "rank": 45,
+      "trophies": 5332
+    },
+    {
+      "rank": 46,
+      "trophies": 5329
+    },
+    {
+      "rank": 47,
+      "trophies": 5327
+    },
+    {
+      "rank": 48,
+      "trophies": 5326
+    },
+    {
+      "rank": 49,
+      "trophies": 5324
+    },
+    {
+      "rank": 50,
+      "trophies": 5323
+    },
+    {
+      "rank": 51,
+      "trophies": 5324
+    },
+    {
+      "rank": 52,
+      "trophies": 5321
+    },
+    {
+      "rank": 53,
+      "trophies": 5322
+    },
+    {
+      "rank": 54,
+      "trophies": 5320
+    },
+    {
+      "rank": 55,
+      "trophies": 5320
+    },
+    {
+      "rank": 56,
+      "trophies": 5317
+    },
+    {
+      "rank": 57,
+      "trophies": 5315
+    },
+    {
+      "rank": 58,
+      "trophies": 5317
+    },
+    {
+      "rank": 59,
+      "trophies": 5318
+    },
+    {
+      "rank": 60,
+      "trophies": 5317
+    },
+    {
+      "rank": 61,
+      "trophies": 5317
+    },
+    {
+      "rank": 62,
+      "trophies": 5315
+    },
+    {
+      "rank": 63,
+      "trophies": 5314
+    },
+    {
+      "rank": 64,
+      "trophies": 5314
+    },
+    {
+      "rank": 65,
+      "trophies": 5309
+    },
+    {
+      "rank": 66,
+      "trophies": 5307
+    },
+    {
+      "rank": 67,
+      "trophies": 5307
+    },
+    {
+      "rank": 68,
+      "trophies": 5305
+    },
+    {
+      "rank": 69,
+      "trophies": 5306
+    },
+    {
+      "rank": 70,
+      "trophies": 5306
+    },
+    {
+      "rank": 71,
+      "trophies": 5305
+    },
+    {
+      "rank": 72,
+      "trophies": 5305
+    },
+    {
+      "rank": 73,
+      "trophies": 5306
+    },
+    {
+      "rank": 74,
+      "trophies": 5304
+    },
+    {
+      "rank": 75,
+      "trophies": 5302
+    },
+    {
+      "rank": 76,
+      "trophies": 5299
+    },
+    {
+      "rank": 77,
+      "trophies": 5298
+    },
+    {
+      "rank": 78,
+      "trophies": 5298
+    },
+    {
+      "rank": 79,
+      "trophies": 5298
+    },
+    {
+      "rank": 80,
+      "trophies": 5297
+    },
+    {
+      "rank": 81,
+      "trophies": 5297
+    },
+    {
+      "rank": 82,
+      "trophies": 5297
+    },
+    {
+      "rank": 83,
+      "trophies": 5298
+    },
+    {
+      "rank": 84,
+      "trophies": 5299
+    },
+    {
+      "rank": 85,
+      "trophies": 5300
+    },
+    {
+      "rank": 86,
+      "trophies": 5298
+    },
+    {
+      "rank": 87,
+      "trophies": 5296
+    },
+    {
+      "rank": 88,
+      "trophies": 5296
+    },
+    {
+      "rank": 89,
+      "trophies": 5295
+    },
+    {
+      "rank": 90,
+      "trophies": 5294
+    },
+    {
+      "rank": 91,
+      "trophies": 5294
+    },
+    {
+      "rank": 92,
+      "trophies": 5294
+    },
+    {
+      "rank": 93,
+      "trophies": 5292
+    },
+    {
+      "rank": 94,
+      "trophies": 5293
+    },
+    {
+      "rank": 95,
+      "trophies": 5292
+    },
+    {
+      "rank": 96,
+      "trophies": 5292
+    },
+    {
+      "rank": 97,
+      "trophies": 5291
+    },
+    {
+      "rank": 98,
+      "trophies": 5291
+    },
+    {
+      "rank": 99,
+      "trophies": 5291
+    },
+    {
+      "rank": 100,
+      "trophies": 5290
+    },
+    {
+      "rank": 101,
+      "trophies": 5290
+    },
+    {
+      "rank": 102,
+      "trophies": 5288
+    },
+    {
+      "rank": 103,
+      "trophies": 5288
+    },
+    {
+      "rank": 104,
+      "trophies": 5288
+    },
+    {
+      "rank": 105,
+      "trophies": 5289
+    },
+    {
+      "rank": 106,
+      "trophies": 5287
+    },
+    {
+      "rank": 107,
+      "trophies": 5286
+    },
+    {
+      "rank": 108,
+      "trophies": 5286
+    },
+    {
+      "rank": 109,
+      "trophies": 5285
+    },
+    {
+      "rank": 110,
+      "trophies": 5285
+    },
+    {
+      "rank": 111,
+      "trophies": 5285
+    },
+    {
+      "rank": 112,
+      "trophies": 5284
+    },
+    {
+      "rank": 113,
+      "trophies": 5285
+    },
+    {
+      "rank": 114,
+      "trophies": 5284
+    },
+    {
+      "rank": 115,
+      "trophies": 5284
+    },
+    {
+      "rank": 116,
+      "trophies": 5283
+    },
+    {
+      "rank": 117,
+      "trophies": 5283
+    },
+    {
+      "rank": 118,
+      "trophies": 5283
+    },
+    {
+      "rank": 119,
+      "trophies": 5283
+    },
+    {
+      "rank": 120,
+      "trophies": 5283
+    },
+    {
+      "rank": 121,
+      "trophies": 5283
+    },
+    {
+      "rank": 122,
+      "trophies": 5282
+    },
+    {
+      "rank": 123,
+      "trophies": 5282
+    },
+    {
+      "rank": 124,
+      "trophies": 5282
+    },
+    {
+      "rank": 125,
+      "trophies": 5282
+    },
+    {
+      "rank": 126,
+      "trophies": 5282
+    },
+    {
+      "rank": 127,
+      "trophies": 5282
+    },
+    {
+      "rank": 128,
+      "trophies": 5281
+    },
+    {
+      "rank": 129,
+      "trophies": 5282
+    },
+    {
+      "rank": 130,
+      "trophies": 5281
+    },
+    {
+      "rank": 131,
+      "trophies": 5281
+    },
+    {
+      "rank": 132,
+      "trophies": 5281
+    },
+    {
+      "rank": 133,
+      "trophies": 5281
+    },
+    {
+      "rank": 134,
+      "trophies": 5280
+    },
+    {
+      "rank": 135,
+      "trophies": 5280
+    },
+    {
+      "rank": 136,
+      "trophies": 5280
+    },
+    {
+      "rank": 137,
+      "trophies": 5280
+    },
+    {
+      "rank": 138,
+      "trophies": 5280
+    },
+    {
+      "rank": 139,
+      "trophies": 5280
+    },
+    {
+      "rank": 140,
+      "trophies": 5279
+    },
+    {
+      "rank": 141,
+      "trophies": 5278
+    },
+    {
+      "rank": 142,
+      "trophies": 5278
+    },
+    {
+      "rank": 143,
+      "trophies": 5278
+    },
+    {
+      "rank": 144,
+      "trophies": 5276
+    },
+    {
+      "rank": 145,
+      "trophies": 5277
+    },
+    {
+      "rank": 146,
+      "trophies": 5277
+    },
+    {
+      "rank": 147,
+      "trophies": 5275
+    },
+    {
+      "rank": 148,
+      "trophies": 5276
+    },
+    {
+      "rank": 149,
+      "trophies": 5276
+    },
+    {
+      "rank": 150,
+      "trophies": 5276
+    },
+    {
+      "rank": 151,
+      "trophies": 5276
+    },
+    {
+      "rank": 152,
+      "trophies": 5276
+    },
+    {
+      "rank": 153,
+      "trophies": 5274
+    },
+    {
+      "rank": 154,
+      "trophies": 5274
+    },
+    {
+      "rank": 155,
+      "trophies": 5274
+    },
+    {
+      "rank": 156,
+      "trophies": 5275
+    },
+    {
+      "rank": 157,
+      "trophies": 5273
+    },
+    {
+      "rank": 158,
+      "trophies": 5273
+    },
+    {
+      "rank": 159,
+      "trophies": 5272
+    },
+    {
+      "rank": 160,
+      "trophies": 5272
+    },
+    {
+      "rank": 161,
+      "trophies": 5270
+    },
+    {
+      "rank": 162,
+      "trophies": 5271
+    },
+    {
+      "rank": 163,
+      "trophies": 5271
+    },
+    {
+      "rank": 164,
+      "trophies": 5271
+    },
+    {
+      "rank": 165,
+      "trophies": 5270
+    },
+    {
+      "rank": 166,
+      "trophies": 5270
+    },
+    {
+      "rank": 167,
+      "trophies": 5268
+    },
+    {
+      "rank": 168,
+      "trophies": 5268
+    },
+    {
+      "rank": 169,
+      "trophies": 5269
+    },
+    {
+      "rank": 170,
+      "trophies": 5269
+    },
+    {
+      "rank": 171,
+      "trophies": 5267
+    },
+    {
+      "rank": 172,
+      "trophies": 5267
+    },
+    {
+      "rank": 173,
+      "trophies": 5267
+    },
+    {
+      "rank": 174,
+      "trophies": 5266
+    },
+    {
+      "rank": 175,
+      "trophies": 5266
+    },
+    {
+      "rank": 176,
+      "trophies": 5266
+    },
+    {
+      "rank": 177,
+      "trophies": 5265
+    },
+    {
+      "rank": 178,
+      "trophies": 5265
+    },
+    {
+      "rank": 179,
+      "trophies": 5265
+    },
+    {
+      "rank": 180,
+      "trophies": 5265
+    },
+    {
+      "rank": 181,
+      "trophies": 5265
+    },
+    {
+      "rank": 182,
+      "trophies": 5265
+    },
+    {
+      "rank": 183,
+      "trophies": 5264
+    },
+    {
+      "rank": 184,
+      "trophies": 5264
+    },
+    {
+      "rank": 185,
+      "trophies": 5264
+    },
+    {
+      "rank": 186,
+      "trophies": 5264
+    },
+    {
+      "rank": 187,
+      "trophies": 5264
+    },
+    {
+      "rank": 188,
+      "trophies": 5263
+    },
+    {
+      "rank": 189,
+      "trophies": 5263
+    },
+    {
+      "rank": 190,
+      "trophies": 5263
+    },
+    {
+      "rank": 191,
+      "trophies": 5263
+    },
+    {
+      "rank": 192,
+      "trophies": 5263
+    },
+    {
+      "rank": 193,
+      "trophies": 5263
+    },
+    {
+      "rank": 194,
+      "trophies": 5262
+    },
+    {
+      "rank": 195,
+      "trophies": 5262
+    },
+    {
+      "rank": 196,
+      "trophies": 5262
+    },
+    {
+      "rank": 197,
+      "trophies": 5261
+    },
+    {
+      "rank": 198,
+      "trophies": 5261
+    },
+    {
+      "rank": 199,
+      "trophies": 5261
+    },
+    {
+      "rank": 200,
+      "trophies": 5260
     }
   ]
 }
