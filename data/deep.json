@@ -1,16 +1,16 @@
 {
-  "reset_at": "2026-10-17T05:01:25Z",
+  "reset_at": "2026-10-18T05:01:26Z",
   "reset_lag_min": 3,
-  "legend_day": "2026-10-17",
-  "reset_label": "17 oct 2026",
-  "previous_reset_date": "2026-10-16",
+  "legend_day": "2026-10-18",
+  "reset_label": "18 oct 2026",
+  "previous_reset_date": "2026-10-17",
   "trend_samples": 7,
-  "pool_size": 10784,
+  "pool_size": 10787,
   "ranked_now": 2000,
   "quality": {
-    "recon200": 5268,
-    "oficial200": 5412,
-    "diff": -144
+    "recon200": 5279,
+    "oficial200": 5279,
+    "diff": 0
   },
   "deep_ranks": [
     1,
@@ -31,87 +31,87 @@
   "cutoffs": [
     {
       "rank": 1,
-      "reset": 5536,
-      "delta": 70,
-      "pred": 5558
+      "reset": 5529,
+      "delta": -7,
+      "pred": 5545
     },
     {
       "rank": 10,
-      "reset": 5428,
-      "delta": 35,
-      "pred": 5449
+      "reset": 5441,
+      "delta": 13,
+      "pred": 5462
     },
     {
       "rank": 25,
-      "reset": 5382,
-      "delta": 25,
-      "pred": 5401
+      "reset": 5389,
+      "delta": 7,
+      "pred": 5408
     },
     {
       "rank": 50,
-      "reset": 5339,
-      "delta": 13,
-      "pred": 5354
+      "reset": 5355,
+      "delta": 16,
+      "pred": 5370
     },
     {
       "rank": 100,
-      "reset": 5300,
-      "delta": 14,
-      "pred": 5314
+      "reset": 5312,
+      "delta": 12,
+      "pred": 5325
     },
     {
       "rank": 150,
-      "reset": 5280,
+      "reset": 5291,
       "delta": 11,
-      "pred": 5293
+      "pred": 5302
     },
     {
       "rank": 200,
-      "reset": 5268,
-      "delta": 12,
-      "pred": 5281
+      "reset": 5279,
+      "delta": 11,
+      "pred": 5291
     },
     {
       "rank": 350,
-      "reset": 5240,
+      "reset": 5250,
       "delta": 10,
-      "pred": 5251
+      "pred": 5260
     },
     {
       "rank": 500,
-      "reset": 5221,
-      "delta": 9,
-      "pred": 5231
+      "reset": 5232,
+      "delta": 11,
+      "pred": 5242
     },
     {
       "rank": 750,
-      "reset": 5198,
-      "delta": 7,
-      "pred": 5208
+      "reset": 5206,
+      "delta": 8,
+      "pred": 5215
     },
     {
       "rank": 1000,
-      "reset": 5180,
+      "reset": 5187,
       "delta": 7,
-      "pred": 5189
+      "pred": 5195
     },
     {
       "rank": 1250,
-      "reset": 5163,
+      "reset": 5170,
       "delta": 7,
-      "pred": 5171
+      "pred": 5177
     },
     {
       "rank": 1500,
-      "reset": 5150,
+      "reset": 5157,
       "delta": 7,
-      "pred": 5157
+      "pred": 5164
     },
     {
       "rank": 2000,
-      "reset": 5128,
+      "reset": 5133,
       "delta": 5,
-      "pred": 5135
+      "pred": 5140
     }
   ]
 }
